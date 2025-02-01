@@ -11,9 +11,9 @@ function App() {
         highlightedText="10X Effective"
       />
       <Title text="Getting to Know MY AIO" size="small" />
-      <Button>Get Started</Button>
+      <Button>CONNECT TODAY</Button>
       <Button variant="outlineGradient">Outline Button</Button>
-      <Button variant="hoverEffect">CONNECT TODAY</Button>
+      <Button variant="hoverEffect">GET STARTED</Button>
     </div>
   );
 }

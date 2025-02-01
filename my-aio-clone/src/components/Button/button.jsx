@@ -18,8 +18,11 @@ before:absolute before:inset-[-2px] before:rounded-full before:border-2 before:b
 before:-z-10 before:w-[calc(100%+4px)] before:h-[calc(100%+4px)] before:left-[-2px] before:top-[-2px] 
 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white m-4`,
 
-    hoverEffect:
-      "bg-purple-500 text-white relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-blue-400 before:transition-all before:duration-300 hover:before:h-full m-4",
+    hoverEffect: `select-none bg-[var(--tg-primary-color)] border-none rounded-[30px] 
+      text-[var(--tg-white)] cursor-pointer inline-block text-[14px] font-semibold tracking-[0.05em] 
+      leading-none mb-0 px-[30px] py-[19px] text-center uppercase touch-manipulation 
+      transition-all duration-300 ease-in-out align-middle whitespace-nowrap relative 
+      z-[1] overflow-hidden hover:bg-opacity-80 hover:scale-105`,
   };
 
   return (
