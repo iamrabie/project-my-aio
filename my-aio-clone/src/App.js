@@ -1,10 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Title from "./components/Title/title";
 
 function App() {
   return (
     <div className="App">
- <p>b</p>
+      <Title text="Make Decisions 10X Effective with My AIO" size="large" highlightedText="10X Effective" />
+      <Title text="Getting to Know MY AIO" size="small" highlightedText="aio" />
     </div>
   );
 }
