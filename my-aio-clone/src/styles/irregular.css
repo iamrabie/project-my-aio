@@ -1,24 +1,24 @@
 /* HTML: <div class="inverted-radius"></div> */
 .inverted-radius {
-    --r: 30px; /* the radius */
-    --s: 40px; /* size of inner curve */
-    --x: 7px; /* horizontal offset (no percentange) */
-    --y: 17px; /* vertical offset (no percentange) */
+    --r: 24px; /* the radius */
+    --s: 32px; /* size of inner curve */
+    --x: 12px; /* horizontal offset (no percentange) */
+    --y: 30px; /* vertical offset (no percentange) */
     color: white; /* Make text color visible */
 font-size: 20px; /* Example text size */
 /* text-align: center; */
-display: flex;
+/* display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
+align-items: center; */
     
     width: 410px;
     /* width: fit-content; */
-    min-height:240px;
+    min-height:236px;
     height: fit-content;
     /* aspect-ratio: 2; */
 
-    background: #3FB8AF;
+    background:#3f2581;
     border-radius: var(--r);
     --_m:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%);
     --_g:conic-gradient(at var(--r) var(--r),#000 75%,#0000 0);
