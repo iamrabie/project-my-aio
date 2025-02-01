@@ -1,6 +1,7 @@
 import "./App.css";
 import Button from "./components/Button/button";
 import Title from "./components/Title/title";
+import './index.css';
 
 function App() {
   return (
