@@ -65,3 +65,10 @@ export let overallRatingInfo = [
     {id:0 , icon:<FaSearchPlus />, title:'Secure' , des:'Let\'s Connect'},
 
 ];
+
+
+export let statsInfo = [
+    {id:0 , total:'4,500+' , title:'Businesses Empowered'},
+    {id:0 , total:'10+' , title:'AI Models Trained On'},
+    {id:0 , total:'75%' , title:'Efficiency Boost'},
+];
