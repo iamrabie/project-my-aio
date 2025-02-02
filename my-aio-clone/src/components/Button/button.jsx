@@ -1,33 +1,45 @@
-import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
-const Button = ({
-  children,
-  onClick,
-  type = "button",
-  variant = "gradient",
-  className = "",
-}) => {
-  const baseStyles =
-    "px-6 py-3 rounded-full font-semibold transition-all duration-400";
+const Button = ({ variant, children, className, ...props }) => {
+  const buttonStyles = {
+    primary:
+      "relative inline-flex items-center justify-start overflow-hidden font-semibold transition-all bg-[#6721ff] rounded-[30px] hover:bg-[#6721ff] group py-3.5 px-7 m-4 tracking-wide",
+    primaryInner:
+      "w-full h-full bg-[#0dcaf0] absolute bottom-0 left-0 translate-y-full ease-out duration-500 transition-all group-hover:translate-y-0",
+    primaryText:
+      "relative w-full text-left text-white uppercase group-hover:text-white text-sm",
 
-  const variants = {
-    gradient:'gradient',
-//     outlineGradient: `bg-[#160042] relative border-2 border
-// before:absolute before:inset-[-2px] before:rounded-full before:border-2 before:border-transparent before:bg-gradient-to-r before:from-blue-500 before:to-purple-500 
-// before:-z-10 before:w-[calc(100%+4px)] before:h-[calc(100%+4px)] before:left-[-2px] before:top-[-2px] 
-// hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 hover:text-white m-4`,
+    gradient:
+      "relative flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-semibold text-white rounded-full group bg-gradient-to-r from-purple-600 via-blue-600 to-blue-400 group-hover:from-purple-600 group-hover:via-blue-500 group-hover:to-blue-400 hover:text-white uppercase mb-4",
+    gradientInner:
+      "relative py-3.5 px-8 transition-all ease-in duration-75 bg-[#160042] rounded-full ",
 
-    hoverEffect:
-      "bg-purple-500 relative overflow-hidden before:absolute before:bottom-0 before:left-0 before:w-full before:h-0 before:bg-blue-400 before:transition-all before:duration-300 hover:before:h-full m-4",
+    solidGradient:
+      "relative flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-semibold text-white rounded-full group bg-gradient-to-r from-purple-600 via-blue-500 to-blue-400 hover:bg-gradient-to-l  uppercase py-3.5 px-7",
   };
 
   return (
-    <button
-      type={type}
-      onClick={onClick}
-      className={`${baseStyles} ${variants[variant]} ${className} text-white`}
-    >
-      {children}
+    <button className={`${buttonStyles[variant]} ${className}`} {...props}>
+      {variant === "primary" && (
+        <>
+          <span className={buttonStyles.primaryInner}></span>
+          <span className={buttonStyles.primaryText}>{children}</span>
+          <FaArrowRight className="ml-3 text-white transform rotate-[-45deg] group-hover:rotate-0 transition-all duration-300" />
+        </>
+      )}
+
+      {variant === "gradient" && (
+        <span className="relative py-3 px-8 transition-all ease-in duration-75 bg-[#160042] dark:bg-white rounded-full group-hover:bg-transparent flex items-center">
+          {children}
+          <FaArrowRight className="ml-3 text-white transform rotate-[-45deg] group-hover:rotate-0 transition-all duration-300" />
+        </span>
+      )}
+      {variant === "solidGradient" && (
+        <>
+          {children}
+          <FaArrowRight className="ml-3 text-white transform rotate-[-45deg] group-hover:rotate-0 transition-all duration-300" />
+        </>
+      )}
     </button>
   );
 };

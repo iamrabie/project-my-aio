@@ -1,8 +1,13 @@
 import "./App.css";
 import Button from "./components/Button/button";
+import BeaterShape from "./components/IrregularCard/beaterShape";
 import Title from "./components/Title/title";
+<<<<<<< HEAD
 import Card from "./components/IrregularCard/irregularCard";
 import './index.css';
+=======
+import "./index.css";
+>>>>>>> c1c14995fcaa774e020e45ebd8688d628ee6db3a
 
 function App() {
   return (
@@ -13,10 +18,17 @@ function App() {
         highlightedText="10X Effective"
       />
       <Title text="Getting to Know MY AIO" size="small" />
-      <Button>Get Started</Button>
-      <Button variant="outlineGradient">Outline Button</Button>
-      <Button variant="hoverEffect">CONNECT TODAY</Button>
-      <Card />
+
+      <Button variant="primary">Get Started</Button>
+      <Button variant="gradient">Get Started</Button>
+      <Button variant="solidGradient">Connect Today</Button>
+
+      <BeaterShape
+        image="https://myaio.com/wp-content/uploads/2024/09/Lex.png"
+        name="Les  Alexander"
+        role="R&D Expert"
+        review="I never thought I'd have all my tools in one place, and the AI insights? Pure gold. Helped me make sense of where my campaigns were headed."
+      />
     </div>
   );
 }

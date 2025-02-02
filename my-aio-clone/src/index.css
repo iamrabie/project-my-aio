@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .gradient{
-        @apply bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-purple-500 hover:to-blue-500 m-4;
-    }
+@layer components {
+  .gradient {
+    @apply bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:from-purple-500 hover:to-blue-500 m-4;
+  }
 }
