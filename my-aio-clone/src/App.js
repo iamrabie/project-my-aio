@@ -2,12 +2,7 @@ import "./App.css";
 import Button from "./components/Button/button";
 import BeaterShape from "./components/IrregularCard/beaterShape";
 import Title from "./components/Title/title";
-<<<<<<< HEAD
-import Card from "./components/IrregularCard/irregularCard";
-import './index.css';
-=======
 import "./index.css";
->>>>>>> c1c14995fcaa774e020e45ebd8688d628ee6db3a
 
 function App() {
   return (
