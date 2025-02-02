@@ -1,5 +1,6 @@
 import "./App.css";
 import Button from "./components/Button/button";
+import BeaterShape from "./components/IrregularCard/beaterShape";
 import Title from "./components/Title/title";
 import "./index.css";
 
@@ -16,6 +17,13 @@ function App() {
       <Button variant="primary">Get Started</Button>
       <Button variant="gradient">Get Started</Button>
       <Button variant="solidGradient">Connect Today</Button>
+
+      <BeaterShape
+        image="https://myaio.com/wp-content/uploads/2024/09/Lex.png"
+        name="Les  Alexander"
+        role="R&D Expert"
+        review="I never thought I'd have all my tools in one place, and the AI insights? Pure gold. Helped me make sense of where my campaigns were headed."
+      />
     </div>
   );
 }
