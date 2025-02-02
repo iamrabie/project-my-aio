@@ -1,25 +1,54 @@
 import '../../styles/irregular.css';
 import Title from '../Title/title';
-import { LuBrain } from "react-icons/lu";
-import ReactFlipCard from 'reactjs-flip-card'
 
 
+const IrregularCard = ({icon , title, description , size}) => {
 
-const IrregularCard = () => {
+  const cardStyles ={
+    small:'inverted-radius-small',
+    large:'inverted-radius-large'
+  }
+
+  const innerCardStyles = {
+    small:'inner-card-small',
+    large:'inner-card-large'
+  }
+
+  const iconStyles = {
+    small:'irregular-card-icon-small',
+    large:'irregular-card-icon-large'
+  }
+
   return (
     <>
-    {/* <div className='flex'> */}
-      <div className='border w-[fit-content] relative top-[69px] left-[6px] bg-green-700 rounded-full p-3.5 text-3xl border border-[#160042] bg-[#3f2581] text-white'><LuBrain />
-      </div>
-      <div className='inverted-radius ps-[84px] flex justify-center items-center'>
-        <div className='flex flex-col gap-y-2.5 w-[fit-content] px-4 text-[15px] justify-center'>
-            <Title text="Predictive Analytics with GPT-4" size="small" />
-            <p className='leading-6'>
-            MY AIO use the cutting-edge GPT-4 AI model to provide the most accurate insights that anticipate market trends, giving you a competitive edge.
-            </p>
-        </div>
-      </div>
-    {/* </div> */}
+
+    <div className={`${iconStyles[size]} bg-fabricOfSpace`}>{icon}
+
+</div>
+<div className={`${cardStyles[size]} bg-fabricOfSpace flex justify-center items-center`}>
+  <div className={`${innerCardStyles[size]} text-driftingDream`}>
+      <Title text={title} size="small" />
+      <p className='leading-6'>
+        {description}
+      </p>
+  </div>
+</div>
+  
+          {/* <div className='flex'> */}
+          {/* <div className='border w-[fit-content] relative top-[69px] left-[6px] bg-green-700 rounded-full p-3.5 text-3xl border border-[#160042] bg-[#3f2581] text-white'>{icon}
+
+</div>
+<div className='inverted-radius-large flex justify-center items-center'>
+  <div className='inner-card-large'>
+      <Title text={title} size="small" />
+      <p className='leading-6'>
+        {description}
+      </p>
+  </div>
+</div> */}
+{/* </div> */}
+  
+
     </>
   );
 };
