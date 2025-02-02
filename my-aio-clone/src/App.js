@@ -1,6 +1,7 @@
 import "./App.css";
 import Button from "./components/Button/button";
 import Title from "./components/Title/title";
+import "./index.css";
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
         highlightedText="10X Effective"
       />
       <Title text="Getting to Know MY AIO" size="small" />
-      <Button>CONNECT TODAY</Button>
-      <Button variant="outlineGradient">Outline Button</Button>
-      <Button variant="hoverEffect">GET STARTED</Button>
+
+      <Button variant="primary">Get Started</Button>
+      <Button variant="gradient">Purple to Blue</Button>
+      <Button variant="solidGradient">Get Started</Button>
     </div>
   );
 }
