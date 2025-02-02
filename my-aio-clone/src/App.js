@@ -14,8 +14,8 @@ function App() {
       <Title text="Getting to Know MY AIO" size="small" />
 
       <Button variant="primary">Get Started</Button>
-      <Button variant="gradient">Purple to Blue</Button>
-      <Button variant="solidGradient">Get Started</Button>
+      <Button variant="gradient">Get Started</Button>
+      <Button variant="solidGradient">Connect Today</Button>
     </div>
   );
 }

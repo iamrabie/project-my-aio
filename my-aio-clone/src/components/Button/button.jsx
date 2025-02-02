@@ -10,12 +10,12 @@ const Button = ({ variant, children, className, ...props }) => {
       "relative w-full text-left text-white uppercase transition-colors duration-300 ease-in-out group-hover:text-white text-sm",
 
     gradient:
-      "relative flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-semibold text-white rounded-full group bg-gradient-to-r from-purple-600 via-blue-600 to-blue-400 group-hover:from-purple-600 group-hover:via-blue-500 group-hover:to-blue-400 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300",
+      "relative flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-semibold text-white rounded-full group bg-gradient-to-r from-purple-600 via-blue-600 to-blue-400 group-hover:from-purple-600 group-hover:via-blue-500 group-hover:to-blue-400 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 uppercase",
     gradientInner:
       "relative py-3 px-5 transition-all ease-in duration-75 bg-[#160042] dark:bg-white rounded-full group-hover:bg-transparent",
 
     solidGradient:
-      "relative flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-semibold text-white rounded-full group bg-gradient-to-r from-purple-600 via-blue-500 to-blue-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 uppercase py-3.5 px-7",
+      "relative flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-semibold text-white rounded-full group bg-gradient-to-r from-purple-600 via-blue-500 to-blue-400 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 uppercase py-3 px-7",
   };
 
   return (
@@ -27,8 +27,12 @@ const Button = ({ variant, children, className, ...props }) => {
           <FaArrowRight className="ml-3 text-white transform rotate-[-45deg] group-hover:rotate-0 transition-all duration-300" />
         </>
       )}
+
       {variant === "gradient" && (
-        <span className={buttonStyles.gradientInner}>{children}</span>
+        <span className="relative py-3 px-5 transition-all ease-in duration-75 bg-[#160042] dark:bg-white rounded-full group-hover:bg-transparent flex items-center">
+          {children}
+          <FaArrowRight className="ml-3 text-white transform rotate-[-45deg] group-hover:rotate-0 transition-all duration-300" />
+        </span>
       )}
       {variant === "solidGradient" && (
         <>
