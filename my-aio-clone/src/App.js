@@ -3,10 +3,20 @@ import Button from "./components/Button/button";
 import BeaterShape from "./components/IrregularCard/beaterShape";
 import Title from "./components/Title/title";
 import "./index.css";
-
+import Navbar from "./components/Navbar/navbar";
+import BackgroundSection from "./components/BackgroundSection/backgroundSection";
 function App() {
+  const menuLinks = [
+    { label: "About", href: "#about" },
+    { label: "Features", href: "#features" },
+    { label: "Case Studies", href: "case-studies/" },
+    { label: "How it Works", href: "how-aio-works/" },
+    { label: "Contact", href: "#contact" },
+  ];
   return (
     <div className="App">
+      <Navbar links={menuLinks} />
+      <BackgroundSection />
       <Title
         text="Make Decisions 10X Effective with My AIO"
         size="large"
@@ -17,6 +27,8 @@ function App() {
       <Button variant="primary">Get Started</Button>
       <Button variant="gradient">Get Started</Button>
       <Button variant="solidGradient">Connect Today</Button>
+      <Button variant="largePrimaryBtn">Join The Community</Button>
+      <Button variant="smallPrimaryBtn">Get Started</Button>
 
       <BeaterShape
         image="https://myaio.com/wp-content/uploads/2024/09/Lex.png"
