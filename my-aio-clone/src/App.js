@@ -23,9 +23,6 @@ function App() {
       <Banner />
       {statsInfo.map(info => <Stats title={info.title} total={info.total} /> )}
       <Button>Get Started</Button>
-      <Button variant="outlineGradient">Outline Button</Button>
-      {/* <Button variant="outlineGradient">LET'S SCALE YOUR BUSINESS</Button> */}
-      <Button variant="hoverEffect">CONNECT TODAY</Button>
       {overallRatingInfo.map(info =>
       <Card title={info.title} icon={info.icon} description={info.des} size="small" />
       )}
@@ -35,6 +32,8 @@ function App() {
 
 
       <Button variant="primary">Get Started</Button>
+      <Button variant="solidGradient">Connect y</Button>
+
       <Button variant="gradient">Get Started</Button>
       <Button variant="solidGradient">Connect Today</Button>
 
