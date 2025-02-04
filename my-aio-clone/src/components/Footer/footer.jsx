@@ -56,10 +56,10 @@ ksksk
                 
 
 
-                <div className="bg-green-800 rouded-xl px-5 py-5 my-5">
-                <p className="text-white font-bold text-base">Join our AI experts community</p>
-                <p>Meet and learn from 600+ AI Experts</p>
-                <button>hh</button>
+                <div className="bg-green-800 rounded-2xl w-[298px] border border-white px-8 py-9 text-sm flex flex-col self-center gap-y-8 h-[fit-content]">
+                <p className="text-white font-bold text-base bg-green-500 m-0">Join our AI experts community</p>
+                <p className="bg-green-300 m-0 w-48 text-center mx-auto">Meet and learn from 600+ AI Experts</p>
+                <button className="bg-green-400 m-0 p-0">hh</button>
                 </div>
               </div>
               {/* copyright container */}
