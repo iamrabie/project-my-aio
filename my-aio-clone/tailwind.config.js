@@ -11,6 +11,7 @@ module.exports = {
         background:'linear-gradient(118deg, rgba(14, 8, 58, 1), rgba(131, 70, 160, 1))',
         driftingDream:'#c8b8e8',
         fabricOfSpace:'#331A5E',
+        footerBg:'#12032F',
       }
       
     },

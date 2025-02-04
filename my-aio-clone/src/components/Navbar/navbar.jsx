@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`transition-all duration-500 pt-3 ${
+      className={`transition-all duration-500 ${
         isSticky
           ? "fixed top-0 left-0 w-full bg-[#200f42] z-50 shadow-md"
           : "relative bg-transparent"
