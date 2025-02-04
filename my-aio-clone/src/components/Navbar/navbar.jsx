@@ -1,12 +1,37 @@
+import { useState, useEffect } from "react";
 import Button from "../Button/button";
 import "../../App.css";
 
 const Navbar = ({ links }) => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const triggerPoint = window.innerHeight * 0.5;
+
+      if (scrollPosition > triggerPoint) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-[#200f42] text-white h-[96px] w-full text-semibold hover:text-bold px-3">
-      <div className="container flex justify-between items-center h-full">
+    <nav
+      className={`transition-all duration-500 ${
+        isSticky
+          ? "fixed top-0 left-0 w-full bg-[#200f42] z-50 shadow-md"
+          : "relative bg-transparent"
+      }`}
+    >
+      <div className="container flex justify-between items-center h-[96px] px-3">
         {/* Logo */}
-        <a href="/" className="flex-shrink-0 ">
+        <a href="/" className="flex-shrink-0">
           <img
             src="https://myaio.com/wp-content/uploads/2024/02/AIO-.png"
             alt="Logo"
@@ -29,7 +54,7 @@ const Navbar = ({ links }) => {
         </ul>
 
         {/* Button */}
-        <div className="flex-shrink-0 ">
+        <div className="flex-shrink-0">
           <Button variant="primary">Get Started</Button>
         </div>
       </div>
