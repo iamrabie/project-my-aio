@@ -9,6 +9,7 @@ import Card from "./components/IrregularCard/irregularCard";
 import Stats from "./components/Stats/stats";
 import Banner from "./components/Banner/banner";
 import Footer from "./components/Footer/footer";
+import SectionCard from "./components/SectionCard/sectionCard";
 import './index.css';
 import { makeDecisionsInfo , overallRatingInfo , statsInfo} from "./data/data";
 
@@ -32,6 +33,12 @@ function App() {
         size="large"
         highlightedText="10X Effective"
       />
+      <SectionCard display="flex flex-col" gapY="gap-y-5">
+        bnm
+      </SectionCard>
+      <SectionCard display="flex flex-col" gapY="gap-y-5">
+        bnm
+      </SectionCard>
       <Title text="Getting to Know MY AIO" size="small" />
       <Banner />
       {statsInfo.map((info) => (

@@ -8,6 +8,7 @@ const Navbar = ({ links }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
+      console.log('scroll :' , scrollPosition);
       const triggerPoint = window.innerHeight * 0.5;
 
       if (scrollPosition > triggerPoint) {
