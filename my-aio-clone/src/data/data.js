@@ -123,9 +123,9 @@ export let customerTrustInfo = [
 ];
 
 export const menuLinks = [
-  { id:0 , label: "About", href: "#about" },
-  { id:1 , label: "Features", href: "#features" },
-  { id:2 , label: "Case Studies", href: "case-studies/" },
-  { id:3 , label: "How it Works", href: "how-aio-works/" },
-  { id:4 , label: "Contact", href: "#contact" },
+  { id:0 , label: "About" , link:"/about"},
+  { id:1 , label: "Features" , link:"/features"},
+  { id:2 , label: "Case Studies" , link:"/case-studies"},
+  { id:3 , label: "How it Works" , link:"/how-aio-works"},
+  { id:4 , label: "Contact" , link:"/contact"},
 ];

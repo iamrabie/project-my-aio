@@ -12,17 +12,27 @@ import Navbar from "./components/Navbar/navbar";
 // import SectionCard from "./components/SectionCard/sectionCard";
 // import './index.css';
 // import { makeDecisionsInfo , overallRatingInfo , statsInfo} from "./data/data";
-
-
+import {Routes , Route} from 'react-router-dom';
+import About from "./routes/About/about";
+import Features from "./routes/Features/features";
+import CaseStudies from "./routes/CaseStudies/caseStudies";
+import HowItWorks from "./routes/HowItWorks/howItWorks";
+import Contact from "./routes/Contact/contact";
 
 
 function App() {
 
   return (
     <div className="App">
-      <div>
-        
-      </div>
+      <Navbar />
+      <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="about" element={<About />} />
+          <Route path="features" element={<Features />} />
+          <Route path="case-studies" element={<CaseStudies />} />
+          <Route path="how-aio-works" element={<HowItWorks />} />
+          <Route path="contact" element={<Contact />} />
+      </Routes>
       {/* <Navbar />
       <BackgroundSection />
       <Title
