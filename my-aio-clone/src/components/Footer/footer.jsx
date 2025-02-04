@@ -5,6 +5,7 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import Copyright from "./copyright";
+import CustomerTrust from "./customerTrust";
 
 
 const Footer = () => {
@@ -12,10 +13,17 @@ const Footer = () => {
         <>
         <div className="h-[fit-content] text-white bg-black">
             <div className="w-[85%] mx-auto">
+
+              {/* ---------------------- CUSTOMER TRUST ------------------- */}
+              
               {/* customer trust container */}
               <div>
-ksksk
+                <CustomerTrust />
               </div>
+
+              {/* ---------------------- CUSTOMER TRUST ---------------------- */}
+
+
 
               {/* ----------------------- FOOTER --------------------------- */}
 

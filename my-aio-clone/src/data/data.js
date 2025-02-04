@@ -111,3 +111,13 @@ export let copyrightsInfo = [
   {id:2 , title:'Disclaimer'},
   {id:3 , title:'Privacy Policy'},
 ];
+
+
+export let customerTrustInfo = [
+  {id:0 , src:'https://myaio.com/wp-content/uploads/2023/07/1-3.png'},
+  {id:1 , src:'https://myaio.com/wp-content/uploads/2023/07/3-1.png'},
+  {id:2 , src:'https://myaio.com/wp-content/uploads/2023/07/2-2.png'},
+  {id:3 , src:'https://myaio.com/wp-content/uploads/2023/07/1-3.png'},
+  {id:4 , src:'https://myaio.com/wp-content/uploads/2023/07/3-1.png'},
+  {id:5 , src:'https://myaio.com/wp-content/uploads/2023/07/2-2.png'},
+];
