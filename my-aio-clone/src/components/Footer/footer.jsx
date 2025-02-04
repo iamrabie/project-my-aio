@@ -56,7 +56,7 @@ ksksk
                 
 
 
-                <div className="bg-green-800 rouded-lg px-5">
+                <div className="bg-green-800 rouded-xl px-5 py-5 my-5">
                 <p className="text-white font-bold text-base">Join our AI experts community</p>
                 <p>Meet and learn from 600+ AI Experts</p>
                 <button>hh</button>
