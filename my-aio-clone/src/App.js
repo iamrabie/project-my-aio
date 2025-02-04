@@ -5,6 +5,7 @@ import Title from "./components/Title/title";
 import Card from "./components/IrregularCard/irregularCard";
 import Stats from "./components/Stats/stats";
 import Banner from "./components/Banner/banner";
+import Footer from "./components/Footer/footer";
 import './index.css';
 import { makeDecisionsInfo , overallRatingInfo , statsInfo} from "./data/data";
 
@@ -43,6 +44,7 @@ function App() {
         role="R&D Expert"
         review="I never thought I'd have all my tools in one place, and the AI insights? Pure gold. Helped me make sense of where my campaigns were headed."
       />
+      <Footer />
     </div>
   );
 }

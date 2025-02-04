@@ -86,3 +86,20 @@ export let bannerInfo = [
   {id:0 , src:'https://www.brandpush.co/cdn-cgi/imagedelivery/gKm6BYVdHCj_SVQET_Msrw/3fc4af63-e906-4112-d141-d504c6ea5c00/public' , height:'h-12'}
 
 ];
+
+
+export let footerProducts = [
+  {id:0 , title:'About'},
+  {id:1, title:'Features'},
+  {id:2, title:'How it Works'},
+  {id:3, title:'Endorsements & Publications'},
+  {id:4, title:'Contact'}
+];
+
+
+export let footerNeedHelp = [
+
+  {id:0 , title:'855-918-5940'},
+  {id:1 , title:'ask@myaio.com'},
+  {id:2 , title:'myaio.com'}
+];
