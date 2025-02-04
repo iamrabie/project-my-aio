@@ -20,7 +20,7 @@ const Navbar = ({ links }) => {
             <li key={index}>
               <a
                 href={link.href}
-                className="text-white text-[16px] font-semibold px-[26px] py-[40px] leading-[1] relative z-10 tracking-[0.005em] hover:text-[#6721ff] transition-colors duration-300"
+                className="text-white text-sm font-semibold px-[26px] py-[40px] leading-[1] relative z-10 tracking-[0.005em] hover:text-[#6721ff] transition-colors duration-300"
               >
                 {link.label}
               </a>
