@@ -7,7 +7,7 @@ const Button = ({ variant, children, className, ...props }) => {
     primaryInner:
       "w-full h-full bg-[#0dcaf0] absolute bottom-0 left-0 translate-y-full ease-out duration-500 transition-all group-hover:translate-y-0",
     primaryText:
-      "relative  h-[16px] text-left text-white uppercase group-hover:text-white text-sm",
+      "relative  h-[16px] text-left text-white uppercase group-hover:text-white text-sm px-2",
 
     gradient:
       "relative flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-semibold text-white rounded-full group bg-gradient-to-r from-purple-600 via-blue-600 to-blue-400 group-hover:from-purple-600 group-hover:via-blue-500 group-hover:to-blue-400 hover:text-white uppercase mb-4 tracking-wider",
