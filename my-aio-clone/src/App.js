@@ -38,15 +38,6 @@ function App() {
         <Stats title={info.title} total={info.total} />
       ))}
       <Button>Get Started</Button>
-<<<<<<< HEAD
-      {overallRatingInfo.map(info =>
-      <Card title={info.title} icon={info.icon} description={info.des} size="small" />
-      )}
-      {makeDecisionsInfo.map(item =>
-      <Card title={item.title} icon={item.icon} description={item.des} size="large" />
-      )}
-
-=======
       <Button variant="outlineGradient">Outline Button</Button>
       {/* <Button variant="outlineGradient">LET'S SCALE YOUR BUSINESS</Button> */}
       <Button variant="hoverEffect">CONNECT TODAY</Button>
@@ -66,7 +57,6 @@ function App() {
           size="large"
         />
       ))}
->>>>>>> aqsa
 
       <Button variant="primary">Get Started</Button>
       <Button variant="solidGradient">Connect y</Button>
