@@ -103,3 +103,11 @@ export let footerNeedHelp = [
   {id:1 , title:'ask@myaio.com'},
   {id:2 , title:'myaio.com'}
 ];
+
+
+export let copyrightsInfo = [
+  {id:0 , title:'Terms & Conditions'},
+  {id:1 , title:'Refund Policy'},
+  {id:2 , title:'Disclaimer'},
+  {id:3 , title:'Privacy Policy'},
+];
