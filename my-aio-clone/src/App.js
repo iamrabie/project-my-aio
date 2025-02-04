@@ -8,8 +8,12 @@ import BackgroundSection from "./components/BackgroundSection/backgroundSection"
 import Card from "./components/IrregularCard/irregularCard";
 import Stats from "./components/Stats/stats";
 import Banner from "./components/Banner/banner";
-import "./index.css";
-import { makeDecisionsInfo, overallRatingInfo, statsInfo } from "./data/data";
+import Footer from "./components/Footer/footer";
+import './index.css';
+import { makeDecisionsInfo , overallRatingInfo , statsInfo} from "./data/data";
+
+
+
 
 function App() {
   const menuLinks = [
@@ -55,6 +59,8 @@ function App() {
       ))}
 
       <Button variant="primary">Get Started</Button>
+      <Button variant="solidGradient">Connect y</Button>
+
       <Button variant="gradient">Get Started</Button>
       <Button variant="solidGradient">Connect Today</Button>
       <Button variant="largePrimaryBtn">Join The Community</Button>
@@ -66,6 +72,7 @@ function App() {
         role="R&D Expert"
         review="I never thought I'd have all my tools in one place, and the AI insights? Pure gold. Helped me make sense of where my campaigns were headed."
       />
+      <Footer />
     </div>
   );
 }
