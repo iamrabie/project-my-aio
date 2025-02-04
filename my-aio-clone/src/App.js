@@ -1,32 +1,26 @@
-import "./App.css";
-import Button from "./components/Button/button";
-import BeaterShape from "./components/IrregularCard/beaterShape";
-import Title from "./components/Title/title";
-import "./index.css";
-import Navbar from "./components/Navbar/navbar";
-import BackgroundSection from "./components/BackgroundSection/backgroundSection";
-import Card from "./components/IrregularCard/irregularCard";
-import Stats from "./components/Stats/stats";
-import Banner from "./components/Banner/banner";
-import Footer from "./components/Footer/footer";
-import SectionCard from "./components/SectionCard/sectionCard";
-import './index.css';
-import { makeDecisionsInfo , overallRatingInfo , statsInfo} from "./data/data";
+// import "./App.css";
+// import Button from "./components/Button/button";
+// import BeaterShape from "./components/IrregularCard/beaterShape";
+// import Title from "./components/Title/title";
+// import "./index.css";
+// import Navbar from "./components/Navbar/navbar";
+// import BackgroundSection from "./components/BackgroundSection/backgroundSection";
+// import Card from "./components/IrregularCard/irregularCard";
+// import Stats from "./components/Stats/stats";
+// import Banner from "./components/Banner/banner";
+// import Footer from "./components/Footer/footer";
+// import SectionCard from "./components/SectionCard/sectionCard";
+// import './index.css';
+// import { makeDecisionsInfo , overallRatingInfo , statsInfo} from "./data/data";
 
 
 
 
 function App() {
-  const menuLinks = [
-    { label: "About", href: "#about" },
-    { label: "Features", href: "#features" },
-    { label: "Case Studies", href: "case-studies/" },
-    { label: "How it Works", href: "how-aio-works/" },
-    { label: "Contact", href: "#contact" },
-  ];
+
   return (
     <div className="App">
-      <Navbar links={menuLinks} />
+      {/* <Navbar />
       <BackgroundSection />
       <Title
         text="Make Decisions 10X Effective with My AIO"
@@ -79,7 +73,7 @@ function App() {
         role="R&D Expert"
         review="I never thought I'd have all my tools in one place, and the AI insights? Pure gold. Helped me make sense of where my campaigns were headed."
       />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

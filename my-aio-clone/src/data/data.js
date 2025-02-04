@@ -121,3 +121,11 @@ export let customerTrustInfo = [
   {id:4 , src:'https://myaio.com/wp-content/uploads/2023/07/3-1.png'},
   {id:5 , src:'https://myaio.com/wp-content/uploads/2023/07/2-2.png'},
 ];
+
+export const menuLinks = [
+  { id:0 , label: "About", href: "#about" },
+  { id:1 , label: "Features", href: "#features" },
+  { id:2 , label: "Case Studies", href: "case-studies/" },
+  { id:3 , label: "How it Works", href: "how-aio-works/" },
+  { id:4 , label: "Contact", href: "#contact" },
+];

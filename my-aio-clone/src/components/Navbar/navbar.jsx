@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import Button from "../Button/button";
+import { menuLinks } from "../../data/data";
+
 import "../../App.css";
 
-const Navbar = ({ links }) => {
+const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -42,8 +44,8 @@ const Navbar = ({ links }) => {
 
         {/* Menu */}
         <ul className="flex pl-6">
-          {links.map((link, index) => (
-            <li key={index}>
+          {menuLinks.map((link) => (
+            <li key={link.id}>
               <a
                 href={link.href}
                 className="text-white text-sm font-semibold px-[26px] py-[40px] leading-[1] relative z-10 tracking-[0.005em] hover:text-[#6721ff] transition-colors duration-300"
