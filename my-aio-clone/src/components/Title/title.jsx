@@ -1,6 +1,7 @@
 const Title = ({ size, text, highlightedText }) => {
   //title size
   const titleSize = {
+    extraSmall: "text-[15px]",
     small: "text-xl",
     large: "text-6xl",
   };
