@@ -1,14 +1,41 @@
+import SectionCard from "../../components/SectionCard/sectionCard";
+import HeroSection from "../../components/Sections/HeroSection/heroSection";
+import MakeDecisions from "../../components/Sections/MakeDecisions/makeDecisions";
+import OverallRating from "../../components/Sections/OverallRating/overallRating";
+import Statistics from "../../components/Sections/Stats/statistics";
+import { statsInfo , makeDecisionsInfo  , overallRatingInfo} from "../../data/data";
+import Title from "../../components/Title/title";
+// import IrregularCard from "../../components/IrregularCard/irregularCard";
+
 
 const About = () => {
-    return(
-        <>
-        <p>About</p>
-        <div>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </div>
-        </>
-    );
-}
+  return (
+    <>
+      {/* ABOUT CONTAINER */}
+      <div className="pt-16">
 
+        {/* HERO SECTION */}
+        <SectionCard display="flex flex-col" gapY="gap-y-10">
+            <HeroSection />
+        </SectionCard>
+
+        {/* STATS CONTAINER */}
+        <SectionCard display="flex" gapX="gap-x-6">
+           <Statistics />
+        </SectionCard>
+
+        {/* IRREGULAR CARDS CONTAINER */}
+        <SectionCard display="flex flex-col" gapY="gap-y-10">
+         <MakeDecisions />
+        </SectionCard>
+
+        {/* OVERALL RATING SECTION */}
+        <SectionCard display="flex flex-col" gapY="gap-y-10">
+          <OverallRating />
+        </SectionCard>
+      </div>
+    </>
+  );
+};
 
 export default About;

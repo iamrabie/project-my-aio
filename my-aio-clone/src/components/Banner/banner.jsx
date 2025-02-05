@@ -4,7 +4,7 @@ import { bannerInfo } from "../../data/data";
 const Banner = () => {
   return (
     <>
-      <div className="w-5/6 mx-auto bg-white rounded-lg py-[23px] px-[34px] flex flex-col gap-y-7">
+      <div className="w-[95%] mx-auto bg-white rounded-lg py-[23px] px-[34px] flex flex-col gap-y-7">
         {/* container 1 */}
         <div className="flex items-center justify-between">
           <hr className="border border-gray-200 w-96" />
