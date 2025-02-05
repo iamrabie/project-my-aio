@@ -2,13 +2,9 @@ import React from "react";
 
 const BeaterShape = ({ image, name, role, review }) => {
   return (
-    <div className="relative bg-[#160042] bg-opacity-90 p-8 rounded-lg shadow-lg justify-center text-center w-[571px] h-[310px] flex flex-col items-center overflow-hidden">
-      {/* img at under the sharp corner */}
-      <div className="absolute top-[60px] left-[-1px] w-20 h-20 rounded-full overflow-hidden">
-        <img src={image} alt={name} className="w-full h-full object-cover" />
-      </div>
-
-      <div className="testimonial-shape absolute top-0 left-0 w-full h-full -z-10 text-gray-400">
+    <div className="relative p-10 rounded-lg shadow-lg text-left w-[530px] h-[250px] flex flex-col items-start overflow-hidden">
+      {/* Background Shape */}
+      <div className="absolute top-0 left-0 w-full h-full -z-10 text-fabricOfSpace">
         <svg
           viewBox="0 0 561 274"
           fill="none"
@@ -23,28 +19,42 @@ const BeaterShape = ({ image, name, role, review }) => {
         </svg>
       </div>
 
-      {/* Star Ratings */}
-      <div className="text-yellow-600 mb-2.5 gap-1 flex text-2xl text-left pr-16 max-w-[90%] ">
+      {/* Profile Image */}
+      <div className="absolute top-[50px] left-4 w-20 h-20 rounded-full overflow-hidden">
+        <img src={image} alt={name} className="w-full h-full object-cover" />
+      </div>
+
+      {/* Stars positioned at the start like text */}
+      <div className="text-yellow-500 flex gap-1 mt-[5px] pl-[90px]">
         {[...Array(5)].map((_, i) => (
-          <span key={i} className="text-3xl rounded-full">
-            &#9733;
-          </span>
+          <svg
+            key={i}
+            className="w-5 h-5 text-yellow-500"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 15l-5.09 2.67 1-5.57L2 7.91l5.54-.8L10 2.5l2.46 4.61 5.54.8-3.91 3.81 1 5.57z"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         ))}
       </div>
 
-      {/* Review Text */}
-      <p className="text-gray-400 text-lg leading-relaxed tracking-wide pl-24 text-left max-w-[100%] overflow-hidden text-ellipsis break-words">
+      {/* Review Text aligned properly */}
+      <p className="text-driftingDream text-sm leading-relaxed tracking-wide text-left pl-[90px] pr-4 mt-2 max-w-[90%] ">
         {review}
       </p>
 
-      {/* User Name & Role - Left Aligned */}
-      <div className="mt-4 w-full flex flex-col text-left px-24">
-        <h5 className="text-lg font-semibold mb-[2px]  text-white text-opacity-85 truncate max-w-[100%] tracking-wide">
+      {/* Name and Role aligned like text */}
+      <div className="mt-3 pl-[90px]">
+        <h5 className="text-lg font-semibold text-white text-opacity-85 truncate">
           {name}
         </h5>
-        <span className="text-sm text-gray-400 truncate max-w-[75%]">
-          {role}
-        </span>
+        <span className="text-sm text-black truncate">{role}</span>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const Navbar = ({ links }) => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const triggerPoint = window.innerHeight * 0.5;
+      const triggerPoint = window.innerHeight * 0.8;
 
       if (scrollPosition > triggerPoint) {
         setIsSticky(true);
