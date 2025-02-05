@@ -12,6 +12,7 @@ module.exports = {
         driftingDream:'#c8b8e8',
         fabricOfSpace:'#331A5E',
         footerBg:'#12032F',
+        arcade:'#6721FF',
       }
       
     },

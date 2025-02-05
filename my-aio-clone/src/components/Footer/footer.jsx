@@ -37,7 +37,7 @@ const Footer = () => {
                      <img src="https://myaio.com/wp-content/uploads/2023/07/AIO-1-1-768x460.png" className="h-16"/>
                     </div>
                     <p className="text-driftingDream leading-6 font-semibold">Your All-in-One Top Rated Marketing Solution, delivering data-driven insights with AI precision.</p>
-                    <button className="text-sm px-8 py-3 rounded-full bg-blue-600 w-[fit-content]">CONNECT TODAY</button>
+                    <button className="text-sm px-8 py-3 rounded-full bg-arcade w-[fit-content]">CONNECT TODAY</button>
                     {/* <Button variant="solidGradient">Connect Today</Button> */}
                   </div>
                   {/* sub container 2 */}
@@ -54,13 +54,13 @@ const Footer = () => {
                         {footerNeedHelp.map(item => <p className="text-driftingDream font-semibold" key={item.id}>{item.title}</p>)}
                     </div>
                     <div className="flex gap-x-4">
-                       <div className="bg-black p-2 text-base border rounded-md">
+                       <div className="footer-icon-styles">
                        <FaFacebookF />
                        </div>
-                       <div className="bg-black p-2 text-base border rounded-md">
+                       <div className="footer-icon-styles">
                        <FaInstagram />
                        </div>
-                       <div className="bg-black p-2 text-base border rounded-md">
+                       <div className="footer-icon-styles">
                        <FaLinkedinIn />
                        </div>
                     </div>
@@ -71,7 +71,7 @@ const Footer = () => {
                 <div className="rounded-2xl w-[298px] bg-[#0D0126] border border-[#FFFFFF14]  shadow shadow-md px-8 py-9 flex flex-col self-center gap-y-7 h-[fit-content]">
                   <p className="text-white font-bold text-[15px] m-0 p-0">Join Our AI experts community</p>
                   <p className="m-0 w-48 text-[14.3px] font-semibold text-driftingDream">Meet and learn from 600+ AI Experts</p>
-                  <button className="text-sm py-3.5 rounded-full bg-blue-600">JOIN THE COMMUNITY</button>
+                  <button className="text-sm py-3.5 rounded-full bg-arcade">JOIN THE COMMUNITY</button>
                   {/* <Button variant="primaryTextt">Join The Community</Button> */}
                 </div>
               </div>

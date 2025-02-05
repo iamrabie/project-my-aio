@@ -4,7 +4,7 @@ import "./App.css";
 // import Title from "./components/Title/title";
 // import "./index.css";
 // import Navbar from "./components/Navbar/navbar";
-// import BackgroundSection from "./components/BackgroundSection/backgroundSection";
+import BackgroundSection from "./components/BackgroundSection/backgroundSection";
 // import Card from "./components/IrregularCard/irregularCard";
 // import Stats from "./components/Stats/stats";
 // import Banner from "./components/Banner/banner";
@@ -24,15 +24,19 @@ function App() {
 
   return (
     <div className="App">
+      <Layout>
       <Routes>
-          <Route path="/" element={<Layout></Layout>}>
-           <Route path="about" element={<About />} />
-           <Route path="features" element={<Features />} />
-           <Route path="case-studies" element={<CaseStudies />} />
-           <Route path="how-aio-works" element={<HowItWorks />} />
-           <Route path="contact" element={<Contact />} />
-          </Route>
+           <Route path="/" element={<About />} />
+           <Route path="/about" element={<About />} />
+           <Route path="/features" element={<Features />} />
+           <Route path="/case-studies" element={<CaseStudies />} />
+           <Route path="/how-aio-works" element={<HowItWorks />} />
+           <Route path="/contact" element={<Contact />} />
+          {/* </Route> */}
       </Routes>
+      <BackgroundSection />
+      </Layout>
+
       {/* <Navbar />
       <BackgroundSection />
       <Title

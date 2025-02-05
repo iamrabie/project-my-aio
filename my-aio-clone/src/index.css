@@ -18,4 +18,8 @@
     .stats-container{
         @apply flex flex-col justify-center items-center gap-y-2.5 border border-purple-900 rounded-lg w-[410px] h-44;
     }
+
+    .footer-icon-styles{
+        @apply p-2.5 text-base border border-[#FFFFFF14] rounded-md hover:bg-arcade hover:transition hover:ease-in hover:duration-300;
+    }
 }
