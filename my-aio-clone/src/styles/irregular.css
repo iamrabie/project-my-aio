@@ -4,14 +4,7 @@
     --s: 36px; /* size of inner curve */
     --x: 5px; /* horizontal offset (no percentange) */
     --y: 32px; /* vertical offset (no percentange) */
-    /* color: white; Make text color visible */
-/* font-size: 20px; Example text size */
-/* text-align: center; */
-/* display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center; */
-    
+
     width: 410px;
     /* width: fit-content; */
     min-height:236px;
@@ -42,14 +35,7 @@ align-items: center; */
     --s: 33px; /* size of inner curve */
     --x: 3px; /* horizontal offset (no percentange) */
     --y: 10px; /* vertical offset (no percentange) */
-    /* color: white; Make text color visible */
-/* font-size: 20px; Example text size */
-/* text-align: center; */
-/* display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center; */
-    
+
     width: 235px;
     /* width: fit-content; */
     /* min-height:fit-content; */

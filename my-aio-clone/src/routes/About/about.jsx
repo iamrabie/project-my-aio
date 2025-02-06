@@ -15,7 +15,7 @@ const About = () => {
       <div className="pt-16">
 
         {/* HERO SECTION */}
-        <SectionCard display="flex flex-col" gapY="gap-y-10">
+        <SectionCard display="flex flex-col" gapY="gap-y-10" width="w-[90%]">
             <HeroSection />
         </SectionCard>
 

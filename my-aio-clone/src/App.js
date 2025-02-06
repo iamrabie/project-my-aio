@@ -35,7 +35,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           {/* </Route> */}
         </Routes>
-        <BackgroundSection />
+        {/* <BackgroundSection /> */}
       </Layout>
 
       {/* <Navbar />
