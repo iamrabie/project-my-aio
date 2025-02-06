@@ -21,7 +21,7 @@ const Banner = () => {
             />
             <div className="flex items-center gap-x-4 justify-around">
               {bannerInfo.map((info) => (
-                <img className={info.height} src={info.src} />
+                <img key={info.id} className={info.height} src={info.src} />
               ))}
             </div>
             <img

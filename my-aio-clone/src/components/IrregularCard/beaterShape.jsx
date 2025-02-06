@@ -4,7 +4,7 @@ const BeaterShape = ({ image, name, role, review }) => {
   const [svgHeight, setSvgHeight] = useState(60);
 
   useEffect(() => {
-    const reviewLength = review.length;
+    const reviewLength = review?.length;
     const extraHeight = Math.floor(reviewLength / 100) * 40;
     setSvgHeight(255 + extraHeight);
   }, [review]);
