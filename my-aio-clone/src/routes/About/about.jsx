@@ -5,6 +5,7 @@ import OverallRating from "../../components/Sections/OverallRating/overallRating
 import Statistics from "../../components/Sections/Stats/statistics";
 import { statsInfo , makeDecisionsInfo  , overallRatingInfo} from "../../data/data";
 import Title from "../../components/Title/title";
+import Contact from "../../components/Contact/contact";
 // import IrregularCard from "../../components/IrregularCard/irregularCard";
 
 
@@ -32,6 +33,11 @@ const About = () => {
         {/* OVERALL RATING SECTION */}
         <SectionCard display="flex flex-col" gapY="gap-y-10">
           <OverallRating />
+        </SectionCard>
+
+        {/* CONTACT US SECTION */}
+        <SectionCard display="flex flex-col" gapY="gap-y-20" width="w-[80%]">
+           <Contact />
         </SectionCard>
       </div>
     </>

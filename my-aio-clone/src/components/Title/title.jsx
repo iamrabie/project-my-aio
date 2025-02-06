@@ -3,6 +3,7 @@ const Title = ({ size, text, highlightedText }) => {
   const titleSize = {
     extraSmall: "text-[15px]",
     small: "text-xl",
+    medium:"text-5xl",
     large: "text-6xl",
   };
 
