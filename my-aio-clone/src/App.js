@@ -18,10 +18,7 @@ import Features from "./routes/Features/features";
 import CaseStudies from "./routes/CaseStudies/caseStudies";
 import HowItWorks from "./routes/HowItWorks/howItWorks";
 import Contact from "./routes/Contact/contact";
-<<<<<<< HEAD
 import Layout from "./components/Layout/layout";
-=======
->>>>>>> aqsa
 
 function App() {
   return (
