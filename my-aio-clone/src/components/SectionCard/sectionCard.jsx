@@ -9,7 +9,7 @@ const SectionCard = ({
   return (
     <>
       <div
-        className={`pt-12 pb-28 ${display} ${gap} ${gapX} ${gapY} ${width} mx-auto`}
+        className={`border pt-12 pb-28 ${display} ${gap} ${gapX} ${gapY} ${width} mx-auto`}
       >
         {children}
       </div>

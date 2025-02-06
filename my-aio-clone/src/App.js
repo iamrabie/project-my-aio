@@ -1,10 +1,10 @@
 import "./App.css";
 // import Button from "./components/Button/button";
-import BeaterShape from "./components/IrregularCard/beaterShape";
+
 // import Title from "./components/Title/title";
 // import "./index.css";
 // import Navbar from "./components/Navbar/navbar";
-import BackgroundSection from "./components/BackgroundSection/backgroundSection";
+// import BackgroundSection from "./components/BackgroundSection/backgroundSection";
 // import Card from "./components/IrregularCard/irregularCard";
 // import Stats from "./components/Stats/stats";
 // import Banner from "./components/Banner/banner";
@@ -19,21 +19,25 @@ import CaseStudies from "./routes/CaseStudies/caseStudies";
 import HowItWorks from "./routes/HowItWorks/howItWorks";
 import Contact from "./routes/Contact/contact";
 import Layout from "./components/Layout/layout";
+import Button from "./components/Button/button";
 
 function App() {
   return (
     <div className="App">
       <Layout>
-      <Routes>
-           <Route path="/" element={<About />} />
-           <Route path="/about" element={<About />} />
-           <Route path="/features" element={<Features />} />
-           <Route path="/case-studies" element={<CaseStudies />} />
-           <Route path="/how-aio-works" element={<HowItWorks />} />
-           <Route path="/contact" element={<Contact />} />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/how-aio-works" element={<HowItWorks />} />
+          <Route path="/contact" element={<Contact />} />
           {/* </Route> */}
-      </Routes>
-      {/* <BackgroundSection /> */}
+        </Routes>
+        {/* <BackgroundSection /> */}
+        {/* <div>
+          <BeaterShape />
+        </div> */}
       </Layout>
 
       {/* <Navbar />
@@ -85,7 +89,43 @@ function App() {
 
      
        <Footer />
-      */}
+   */}
+      <Button
+        withArrow={true}
+        padding="px-[28px] py-[12px]"
+        fontSize="text-medium"
+        fontWeight="font-semibold"
+        btnType="primary"
+      >
+        Get Started
+      </Button>
+
+      <Button
+        withArrow={false}
+        padding="px-[27px] py-[15px]"
+        fontSize="text-sm"
+        fontWeight="font-[600]"
+        btnType="primary"
+      >
+        Join The Community
+      </Button>
+      <Button
+        withArrow={true}
+        padding="px-[24px] py-[12px]"
+        fontSize="text-sm"
+        fontWeight="font-semibold"
+        btnType="inverted"
+      >
+        Connect Today
+      </Button>
+      <Button
+        padding="px-[24px] py-[12px]"
+        fontSize="text-sm"
+        fontWeight="font-semibold"
+        btnType="solidGradient"
+      >
+        Get Started
+      </Button>
     </div>
   );
 }

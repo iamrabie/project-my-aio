@@ -45,7 +45,7 @@ const Navbar = () => {
         {/* Menu */}
         <ul className="flex gap-x-[60px]">
           {menuLinks.map((item) => (
-            <Link to={item.link}>
+            <Link to={item.link} key={item.id}>
               <li
                 key={item.id}
                 className="text-white text-[14.5px] font-bold py-[40px] leading-[1] relative z-10 tracking-[0.005em] hover:text-[#6721ff] transition-colors duration-300"
