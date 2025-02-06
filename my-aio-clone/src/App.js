@@ -1,6 +1,6 @@
 import "./App.css";
 // import Button from "./components/Button/button";
-import BeaterShape from "./components/IrregularCard/beaterShape";
+
 // import Title from "./components/Title/title";
 // import "./index.css";
 // import Navbar from "./components/Navbar/navbar";
@@ -19,21 +19,23 @@ import CaseStudies from "./routes/CaseStudies/caseStudies";
 import HowItWorks from "./routes/HowItWorks/howItWorks";
 import Contact from "./routes/Contact/contact";
 import Layout from "./components/Layout/layout";
+import BeaterShape from "./components/IrregularCard/beaterShape";
 
 function App() {
   return (
     <div className="App">
       <Layout>
-      <Routes>
-           <Route path="/" element={<About />} />
-           <Route path="/about" element={<About />} />
-           <Route path="/features" element={<Features />} />
-           <Route path="/case-studies" element={<CaseStudies />} />
-           <Route path="/how-aio-works" element={<HowItWorks />} />
-           <Route path="/contact" element={<Contact />} />
+        <BeaterShape />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/how-aio-works" element={<HowItWorks />} />
+          <Route path="/contact" element={<Contact />} />
           {/* </Route> */}
-      </Routes>
-      <BackgroundSection />
+        </Routes>
+        <BackgroundSection />
       </Layout>
 
       {/* <Navbar />
