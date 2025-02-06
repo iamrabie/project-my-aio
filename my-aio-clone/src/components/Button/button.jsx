@@ -15,7 +15,6 @@ const Button = ({ variant, children, className, ...props }) => {
 
     solidGradient:
       "relative flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-semibold text-white rounded-full group bg-gradient-to-r from-purple-600 via-blue-500 to-blue-400 hover:bg-gradient-to-l  uppercase py-[13px] px-[30px] tracking-wider font-[Outfit,sans-serif]",
-
     largePrimaryBtn:
       "relative inline-flex items-center justify-start overflow-hidden font-semibold transition-all bg-[#6721ff] rounded-[30px] py-[13px] px-[20px] hover:bg-[#6721ff] group tracking-wider",
 

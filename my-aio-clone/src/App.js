@@ -1,6 +1,6 @@
 import "./App.css";
 // import Button from "./components/Button/button";
-// import BeaterShape from "./components/IrregularCard/beaterShape";
+import BeaterShape from "./components/IrregularCard/beaterShape";
 // import Title from "./components/Title/title";
 // import "./index.css";
 // import Navbar from "./components/Navbar/navbar";
@@ -12,16 +12,18 @@ import BackgroundSection from "./components/BackgroundSection/backgroundSection"
 // import SectionCard from "./components/SectionCard/sectionCard";
 // import './index.css';
 // import { makeDecisionsInfo , overallRatingInfo , statsInfo} from "./data/data";
-import {Routes , Route} from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 import About from "./routes/About/about";
 import Features from "./routes/Features/features";
 import CaseStudies from "./routes/CaseStudies/caseStudies";
 import HowItWorks from "./routes/HowItWorks/howItWorks";
 import Contact from "./routes/Contact/contact";
+<<<<<<< HEAD
 import Layout from "./components/Layout/layout";
+=======
+>>>>>>> aqsa
 
 function App() {
-
   return (
     <div className="App">
       <Layout>
@@ -84,13 +86,9 @@ function App() {
       <Button variant="largePrimaryBtn">Join The Community</Button>
       <Button variant="smallPrimaryBtn">Get Started</Button>
 
-      <BeaterShape
-        image="https://myaio.com/wp-content/uploads/2024/09/Lex.png"
-        name="Les  Alexander"
-        role="R&D Expert"
-        review="I never thought I'd have all my tools in one place, and the AI insights? Pure gold. Helped me make sense of where my campaigns were headed."
-      />
-      <Footer />  */}
+     
+       <Footer />
+      */}
     </div>
   );
 }

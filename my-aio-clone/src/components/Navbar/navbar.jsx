@@ -10,7 +10,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      console.log('scroll :' , scrollPosition);
+      console.log("scroll :", scrollPosition);
       const triggerPoint = window.innerHeight * 0.5;
 
       if (scrollPosition > triggerPoint) {
@@ -35,23 +35,23 @@ const Navbar = () => {
       <div className="container flex justify-between items-center h-[101px] px-3.5">
         {/* Logo */}
         {/* <a href="/" className="flex-shrink-0"> */}
-          <img
-            src="https://myaio.com/wp-content/uploads/2024/02/AIO-.png"
-            alt="Logo"
-            className="max-h-[39px]"
-          />
+        <img
+          src="https://myaio.com/wp-content/uploads/2024/02/AIO-.png"
+          alt="Logo"
+          className="max-h-[39px]"
+        />
         {/* </a> */}
 
         {/* Menu */}
         <ul className="flex gap-x-[60px]">
           {menuLinks.map((item) => (
             <Link to={item.link}>
-            <li 
-              key={item.id}
-              className="text-white text-[14.5px] font-bold py-[40px] leading-[1] relative z-10 tracking-[0.005em] hover:text-[#6721ff] transition-colors duration-300"
-            >
+              <li
+                key={item.id}
+                className="text-white text-[14.5px] font-bold py-[40px] leading-[1] relative z-10 tracking-[0.005em] hover:text-[#6721ff] transition-colors duration-300"
+              >
                 {item.label}
-            </li>
+              </li>
             </Link>
           ))}
         </ul>

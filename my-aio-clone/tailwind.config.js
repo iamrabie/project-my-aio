@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.{js,jsx,ts,tsx}', // Ensure all JSX files are included
+    "./src/**/*.{js,jsx,ts,tsx}", // Ensure all JSX files are included
   ],
   theme: {
     extend: {
@@ -13,10 +13,11 @@ module.exports = {
         fabricOfSpace:'#331A5E',
         footerBg:'#12032F',
         arcade:'#6721FF',
-      }
-      
+      },
+      fontFamily: {
+        outfit: ["Outfit", "sans-serif"],
+      },
     },
   },
   plugins: [],
-}
-
+};
