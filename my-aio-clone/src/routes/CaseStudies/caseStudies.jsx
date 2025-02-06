@@ -1,10 +1,7 @@
 const CaseStudies = () => {
     return(
         <>
-        <p>case studies</p>
-        <div>
-            jdbw  nnnnnnnnnnnnnnnnnnnnnnnnn
-        </div>
+        <p className="text-lg text-white">case studies</p>
         </>
     );
 }

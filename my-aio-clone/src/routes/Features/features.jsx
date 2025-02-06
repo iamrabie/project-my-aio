@@ -1,7 +1,7 @@
 const Features = () => {
     return(
         <>
-        <p>Features</p>
+        <p className="text-lg text-white">Features</p>
         </>
     );
 }

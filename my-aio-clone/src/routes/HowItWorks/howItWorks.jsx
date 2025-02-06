@@ -1,7 +1,7 @@
 const HowItWorks = () => {
     return(
         <>
-        <p>how it works</p>
+        <p className="text-lg text-white">how it works</p>
         </>
     );
 }

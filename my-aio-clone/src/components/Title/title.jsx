@@ -11,7 +11,7 @@ const Title = ({ size, text, highlightedText }) => {
 
   return (
     <>
-      <p className={`p-0 m-0 font-bold text-white ${titleSize[size]}`}>
+      <p className={`p-0 m-0 font-bold text-white text-center ${titleSize[size]}`}>
         {parts.map((part, index) =>
           part.toLowerCase() === highlightedText?.toLowerCase() ? (
             <span key={index} className="text-[#0d6efd]">

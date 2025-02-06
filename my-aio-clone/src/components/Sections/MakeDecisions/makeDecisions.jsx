@@ -6,7 +6,7 @@ import { makeDecisionsInfo } from "../../../data/data";
 const MakeDecisions = () => {
   return (
     <>
-      <Title
+     <Title
         text="Make Decisions 10x Effective with MY AIO"
         highlightedText="10x Effective"
         size="large"
