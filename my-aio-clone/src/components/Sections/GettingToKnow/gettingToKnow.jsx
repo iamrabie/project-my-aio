@@ -3,7 +3,7 @@ import Title from "../../Title/title";
 
 const GettingToKnow = ({ steps }) => {
   return (
-    <div className="relative container mx-auto p-6">
+    <>
       {/* Title */}
       <Title text="Getting To Know" size="large" />
 
@@ -52,7 +52,7 @@ const GettingToKnow = ({ steps }) => {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

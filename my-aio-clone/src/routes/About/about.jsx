@@ -90,8 +90,8 @@ const About = () => {
         </SectionCard>
 
         {/* Getting to Know */}
-        <SectionCard>
-          <GettingToKnow />
+        <SectionCard display="flex flex-col" gapY="gap-y-10">
+          <GettingToKnow steps={steps} />
         </SectionCard>
 
         {/* SUCCESS STORIES SECTION */}
