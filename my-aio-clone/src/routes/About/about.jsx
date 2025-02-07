@@ -40,13 +40,14 @@ const About = () => {
 
         {/* CONTACT US SECTION */}
         <SectionCard display="flex flex-col" gapY="gap-y-20" width="w-[80%]">
-           <Contact />
-         </SectionCard>
-         
-        {/* Getting to Know */}
-        <SectionCard>
-          <GettingToKnow />
+          <Contact />
         </SectionCard>
+
+        {/* Getting to Know */}
+        {/* <SectionCard>
+          <GettingToKnow />
+        </SectionCard> */}
+        <GettingToKnow />
       </div>
     </>
   );
