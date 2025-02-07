@@ -5,6 +5,7 @@ const GettingToKnow = ({ steps, withDivider = true }) => {
   return (
     <div className="relative">
       {/* Title */}
+      <Title text="Getting To Know MY AIO" size="large" highlightedText="MY AIO" />
 
       {/* Divider Image (Rendered only if withDivider is true) */}
       {withDivider && (

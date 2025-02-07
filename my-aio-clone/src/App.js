@@ -89,7 +89,7 @@ function App() {
      
        <Footer />
    */}
-      <Button
+      {/* <Button
         withArrow={true}
         padding="px-[28px] py-[12px]"
         fontSize="text-medium"
@@ -97,40 +97,7 @@ function App() {
         btnType="primaryBtn"
       >
         Get Started
-      </Button>
-
-      <Button
-        withArrow={false}
-        padding="px-[27px] py-[15px]"
-        fontSize="text-sm"
-        fontWeight="font-[600]"
-        btnType="primaryBtn"
-      >
-        Join The Community
-      </Button>
-
-      <Button
-        withArrow={false}
-        padding="px-[20px] py-[11px]"
-        fontSize="text-sm"
-        fontWeight="font-semibold"
-        btnType="smallPrimaryBtn"
-      >
-        Get Started
-      </Button>
-
-      <Button
-        withArrow={true}
-        padding="px-[24px] py-[12.5px]"
-        fontSize="text-sm"
-        fontWeight="font-semibold"
-        btnType="solidBtn"
-      >
-        Connect Today
-      </Button>
-      <Button withArrow={false} btnType="invertedBtn">
-        Get Started
-      </Button>
+      </Button> */}
     </div>
   );
 }

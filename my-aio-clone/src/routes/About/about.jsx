@@ -14,6 +14,8 @@ import {
 import Title from "../../components/Title/title";
 import Contact from "../../components/Contact/contact";
 import EventsAndExpos from "../../components/Sections/EventsAndExpos/events&expos";
+import Nav from "../../components/Sections/MakingDataSmarter/nav";
+import MakingDataSmarter from "../../components/Sections/MakingDataSmarter/makingDataSmarter";
 // import IrregularCard from "../../components/IrregularCard/irregularCard";
 
 const About = () => {
@@ -42,12 +44,8 @@ const About = () => {
         </SectionCard>
 
         {/* MAKE DATA SMARTER SECTION */}
-        <SectionCard display="flex flex-col" gapY="gap-y-8">
-          <Title
-            text="Making Data Smarter & Simpler"
-            size="large"
-            highlightedText="Smarter"
-          />
+        <SectionCard display="flex" gapX="gap-x-10">
+          <MakingDataSmarter />
         </SectionCard>
 
         {/* Getting to Know */}
