@@ -35,7 +35,7 @@ const About = () => {
         </SectionCard>
 
         {/* EVENTS AND EXPOS SECTION */}
-        <SectionCard display="flex flex-col" gapY="gap-y-8">
+        <SectionCard display="flex flex-col" gapY="gap-y-16" width="w-[86%]">
            <EventsAndExpos />
         </SectionCard>
 
