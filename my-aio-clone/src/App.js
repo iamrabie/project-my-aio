@@ -95,7 +95,7 @@ function App() {
         padding="px-[28px] py-[12px]"
         fontSize="text-medium"
         fontWeight="font-semibold"
-        btnType="primary"
+        btnType="primaryBtn"
       >
         Get Started
       </Button>
@@ -105,25 +105,31 @@ function App() {
         padding="px-[27px] py-[15px]"
         fontSize="text-sm"
         fontWeight="font-[600]"
-        btnType="primary"
+        btnType="primaryBtn"
       >
         Join The Community
       </Button>
+
       <Button
-        withArrow={true}
-        padding="px-[24px] py-[12px]"
+        withArrow={false}
+        padding="px-[20px] py-[11px]"
         fontSize="text-sm"
         fontWeight="font-semibold"
-        btnType="inverted"
+        btnType="smallPrimaryBtn"
+      >
+        Get Started
+      </Button>
+
+      <Button
+        withArrow={true}
+        padding="px-[24px] py-[12.5px]"
+        fontSize="text-sm"
+        fontWeight="font-semibold"
+        btnType="solidBtn"
       >
         Connect Today
       </Button>
-      <Button
-        padding="px-[24px] py-[12px]"
-        fontSize="text-sm"
-        fontWeight="font-semibold"
-        btnType="solidGradient"
-      >
+      <Button withArrow={false} btnType="invertedBtn">
         Get Started
       </Button>
     </div>
