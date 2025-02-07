@@ -69,6 +69,12 @@ const About = () => {
            <Contact />
         </SectionCard>
          
+
+        {/* Getting to Know */}
+        {/* <SectionCard>
+          <GettingToKnow />
+        </SectionCard> */}
+        <GettingToKnow />
       </div>
     </>
   );
