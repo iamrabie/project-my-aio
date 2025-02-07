@@ -5,7 +5,7 @@ const GettingToKnow = ({ steps }) => {
   return (
     <>
       {/* Title */}
-      <Title text="Getting To Know" size="large" />
+      <Title text="Getting To Know MY AIO" size="large" highlightedText="MY AIO" />
 
       {/* Divider Image */}
       <div className="absolute left-1/2 transform -translate-x-1/2 top-3 bottom-10 flex">

@@ -9,6 +9,11 @@ import { IoCodeSlashOutline } from "react-icons/io5";
 import { GrAnnounce } from "react-icons/gr";
 import { FaSearchPlus } from "react-icons/fa";
 import { BsTools } from "react-icons/bs";
+import { FaRegCopy } from "react-icons/fa";
+import { FaDownload } from "react-icons/fa";
+import { LuClipboard } from "react-icons/lu";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { FaPlus } from "react-icons/fa6";
 
 export let makeDecisionsInfo = [
   {
@@ -167,4 +172,20 @@ export let eventsAndExposInfo = [
   { id: 3, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-2.jpg"},
   { id: 4, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-3-2.jpg"},
   { id: 5, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-3.jpg"}
+];
+
+
+export let nav = [
+  { id:0, title:'Seamless Integration' , name:'integration'},
+  { id:1, title:'User-Centric' , name:'user-centric'},
+  { id:2, title:'Real-Time Data' , name:'real-time'},
+  { id:3, title:'Top-Notch Security' , name:'top-notch'}
+];
+
+export let makingDataSmarterIcons = [
+  { id:0, icon:<FaRegCopy />},
+  { id:1, icon:<FaDownload />},
+  { id:2, icon:<LuClipboard />},
+  { id:3, icon:<RiDeleteBin6Line />},
+  { id:4, icon:<FaPlus />}
 ];
