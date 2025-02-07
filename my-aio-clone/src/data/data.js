@@ -158,3 +158,13 @@ export const menuLinks = [
   { id: 3, label: "How it Works", link: "/how-aio-works" },
   { id: 4, label: "Contact", link: "/contact" },
 ];
+
+
+export let eventsAndExposInfo = [
+  { id: 0, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-1-2.jpg" },
+  { id: 1, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-2-2.jpg" },
+  { id: 2, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-1.jpg" },
+  { id: 3, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-2.jpg"},
+  { id: 4, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-3-2.jpg"},
+  { id: 5, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-3.jpg"}
+];
