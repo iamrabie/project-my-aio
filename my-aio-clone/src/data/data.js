@@ -159,12 +159,63 @@ export const menuLinks = [
   { id: 4, label: "Contact", link: "/contact" },
 ];
 
-
 export let eventsAndExposInfo = [
-  { id: 0, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-1-2.jpg" },
-  { id: 1, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-2-2.jpg" },
-  { id: 2, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-1.jpg" },
-  { id: 3, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-2.jpg"},
-  { id: 4, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-3-2.jpg"},
-  { id: 5, src:"https://myaio.com/wp-content/uploads/2024/10/Artboard-3.jpg"}
+  {
+    id: 0,
+    src: "https://myaio.com/wp-content/uploads/2024/10/Artboard-1-2.jpg",
+  },
+  {
+    id: 1,
+    src: "https://myaio.com/wp-content/uploads/2024/10/Artboard-2-2.jpg",
+  },
+  { id: 2, src: "https://myaio.com/wp-content/uploads/2024/10/Artboard-1.jpg" },
+  { id: 3, src: "https://myaio.com/wp-content/uploads/2024/10/Artboard-2.jpg" },
+  {
+    id: 4,
+    src: "https://myaio.com/wp-content/uploads/2024/10/Artboard-3-2.jpg",
+  },
+  { id: 5, src: "https://myaio.com/wp-content/uploads/2024/10/Artboard-3.jpg" },
+];
+
+export const steps = [
+  {
+    id: 1,
+    image: "https://myaio.com/wp-content/uploads/2023/09/roadmap_img01-1-1.png",
+    title: "Log in to MY AIO",
+    text: (
+      <>
+        Gain access to streamlined insights and AI-driven
+        <br />
+        analytics all in one place.
+      </>
+    ),
+    reverse: false,
+  },
+  {
+    id: 2,
+    image:
+      "https://myaio.com/wp-content/uploads/2023/09/image_2023_09_11T16_41_22_845Z.png",
+    title: (
+      <>
+        Navigate your MY AIO
+        <br />
+        Dashboard
+      </>
+    ),
+    text: (
+      <>
+        All your marketing insights, brilliantly visualized in a
+        <br />
+        single panorama.
+      </>
+    ),
+    reverse: true,
+  },
+  {
+    id: 3,
+    image: "https://myaio.com/wp-content/uploads/2023/09/1-copy.png",
+    title: "Your MY AIO Dashboard",
+    text: "Intuitive design meets powerful insights—all at your fingertips.",
+    reverse: false,
+  },
 ];

@@ -4,57 +4,18 @@ import MakeDecisions from "../../components/Sections/MakeDecisions/makeDecisions
 import OverallRating from "../../components/Sections/OverallRating/overallRating";
 import Statistics from "../../components/Sections/Stats/statistics";
 import GettingToKnow from "../../components/Sections/GettingToKnow/gettingToKnow";
+import BeaterShape from "../../components/IrregularCard/beaterShape";
 import {
   statsInfo,
   makeDecisionsInfo,
   overallRatingInfo,
+  steps,
 } from "../../data/data";
 import Title from "../../components/Title/title";
 import Contact from "../../components/Contact/contact";
 import EventsAndExpos from "../../components/Sections/EventsAndExpos/events&expos";
 // import IrregularCard from "../../components/IrregularCard/irregularCard";
-const steps = [
-  {
-    id: 1,
-    image: "https://myaio.com/wp-content/uploads/2023/09/roadmap_img01-1-1.png",
-    title: "Log in to MY AIO",
-    text: (
-      <>
-        Gain access to streamlined insights and AI-driven
-        <br />
-        analytics all in one place.
-      </>
-    ),
-    reverse: false,
-  },
-  {
-    id: 2,
-    image:
-      "https://myaio.com/wp-content/uploads/2023/09/image_2023_09_11T16_41_22_845Z.png",
-    title: (
-      <>
-        Navigate your MY AIO
-        <br />
-        Dashboard
-      </>
-    ),
-    text: (
-      <>
-        All your marketing insights, brilliantly visualized in a
-        <br />
-        single panorama.
-      </>
-    ),
-    reverse: true,
-  },
-  {
-    id: 3,
-    image: "https://myaio.com/wp-content/uploads/2023/09/1-copy.png",
-    title: "Your MY AIO Dashboard",
-    text: "Intuitive design meets powerful insights—all at your fingertips.",
-    reverse: false,
-  },
-];
+
 const About = () => {
   return (
     <>
@@ -91,7 +52,8 @@ const About = () => {
 
         {/* Getting to Know */}
         <SectionCard display="flex flex-col" gapY="gap-y-10">
-          <GettingToKnow steps={steps} />
+          <Title text="Getting To Know" size="large" />
+          <GettingToKnow steps={steps} withDivider={true} />
         </SectionCard>
 
         {/* SUCCESS STORIES SECTION */}
@@ -107,24 +69,35 @@ const About = () => {
         <SectionCard display="flex flex-col" gapY="gap-y-10">
           <OverallRating />
         </SectionCard>
-
-        <SectionCard>
-          <Title
-            text="Professionals & Teams Choose Us"
-            size="large"
-            highlightedText="Choose Us"
-          />
+        {/* PROFESSIONALS & TEAMS CHOOSE UP */}
+        <SectionCard display="flex flex-col" gapY="gap-y-10">
+          <Title text="Professionals & Teams Choose Us" size="large" />
+          <div className="flex justify-center items-center min-h-screen">
+            <BeaterShape
+              image="https://myaio.com/wp-content/uploads/2024/09/Lex.png"
+              name="LES ALEXANDER"
+              role="R&D Expert"
+              review="I never thought I'd have all my tools in one place, and the AI insights? Pure gold. Helped me make sense of where my campaigns were headed."
+            />
+            <BeaterShape
+              image="https://myaio.com/wp-content/uploads/2024/09/Emily.png"
+              name="Emily Johnson"
+              role="Operational Manage"
+              review="Honestly, I've used a bunch of these analytics tools before, but MY AIO's dashboard? Game changer. It's like they took all the techy stuff and made it super easy to get. I can see everything I need without getting a headache"
+            />
+            <BeaterShape
+              image="https://myaio.com/wp-content/uploads/2024/09/Michael.png"
+              name="Michael Davis"
+              role="Business Owner"
+              review="Knowing that MY AIO has my data locked down tight gives me peace of mind. And on the few occasions I've had questions, their support team was right there with answers. Top-notch experience all around."
+            />
+          </div>
         </SectionCard>
 
         {/* CONTACT US SECTION */}
         <SectionCard display="flex flex-col" gapY="gap-y-20" width="w-[80%]">
           <Contact />
         </SectionCard>
-
-        {/* Getting to Know */}
-        {/* <SectionCard>
-          <GettingToKnow />
-        </SectionCard> */}
       </div>
     </>
   );

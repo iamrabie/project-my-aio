@@ -1,20 +1,21 @@
 import React from "react";
 import Title from "../../Title/title";
 
-const GettingToKnow = ({ steps }) => {
+const GettingToKnow = ({ steps, withDivider = true }) => {
   return (
-    <>
+    <div className="relative">
       {/* Title */}
-      <Title text="Getting To Know" size="large" />
 
-      {/* Divider Image */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 top-3 bottom-10 flex">
-        <img
-          src="https://myaio.com/wp-content/themes/dexai/assets/img/bg/line.svg"
-          alt="Divider"
-          className="h-full w-auto"
-        />
-      </div>
+      {/* Divider Image (Rendered only if withDivider is true) */}
+      {withDivider && (
+        <div className="absolute left-1/2 transform -translate-x-1/2 top-3 bottom-10 flex">
+          <img
+            src="https://myaio.com/wp-content/themes/dexai/assets/img/bg/line.svg"
+            alt="Divider"
+            className="h-full w-auto"
+          />
+        </div>
+      )}
 
       {/* Steps Section */}
       <div className="relative mt-16 space-y-16">
@@ -38,21 +39,23 @@ const GettingToKnow = ({ steps }) => {
 
             {/* Text Section - Small Size & Purple Color */}
             <div
-              className={`flex flex-col justify-center text-medium text-purple-300 ${
+              className={`flex flex-col justify-center text-medium text-[#C8B8E8] ${
                 index % 2 === 0
                   ? "md:order-2 text-left ml-20"
                   : "md:order-1 text-right mr-10"
               }`}
             >
-              <strong className="block text-[22px] text-white mb-2.5">
+              <strong className="block text-[24px] text-white mb-2.5">
                 {step.title}
               </strong>
-              <p className="mt-2">{step.text}</p>
+              <p className="mt-2 text-[14px] font-semibold leading-6">
+                {step.text}
+              </p>
             </div>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
