@@ -12,7 +12,48 @@ import {
 import Title from "../../components/Title/title";
 import Contact from "../../components/Contact/contact";
 // import IrregularCard from "../../components/IrregularCard/irregularCard";
-
+const steps = [
+  {
+    id: 1,
+    image: "https://myaio.com/wp-content/uploads/2023/09/roadmap_img01-1-1.png",
+    title: "Log in to MY AIO",
+    text: (
+      <>
+        Gain access to streamlined insights and AI-driven
+        <br />
+        analytics all in one place.
+      </>
+    ),
+    reverse: false,
+  },
+  {
+    id: 2,
+    image:
+      "https://myaio.com/wp-content/uploads/2023/09/image_2023_09_11T16_41_22_845Z.png",
+    title: (
+      <>
+        Navigate your MY AIO
+        <br />
+        Dashboard
+      </>
+    ),
+    text: (
+      <>
+        All your marketing insights, brilliantly visualized in a
+        <br />
+        single panorama.
+      </>
+    ),
+    reverse: true,
+  },
+  {
+    id: 3,
+    image: "https://myaio.com/wp-content/uploads/2023/09/1-copy.png",
+    title: "Your MY AIO Dashboard",
+    text: "Intuitive design meets powerful insights—all at your fingertips.",
+    reverse: false,
+  },
+];
 const About = () => {
   return (
     <>
@@ -38,6 +79,10 @@ const About = () => {
           <OverallRating />
         </SectionCard>
 
+        <SectionCard>
+          <GettingToKnow steps={steps} />
+        </SectionCard>
+
         {/* CONTACT US SECTION */}
         <SectionCard display="flex flex-col" gapY="gap-y-20" width="w-[80%]">
           <Contact />
@@ -47,7 +92,6 @@ const About = () => {
         {/* <SectionCard>
           <GettingToKnow />
         </SectionCard> */}
-        <GettingToKnow />
       </div>
     </>
   );

@@ -1,76 +1,59 @@
 import React from "react";
 import Title from "../../Title/title";
 
-const steps = [
-  //image and the text
-  {
-    id: 1,
-    image: "https://myaio.com/wp-content/uploads/2023/09/roadmap_img01-1-1.png",
-    title: "Log in to MY AIO",
-    text: "Gain access to streamlined insights and AI-driven analytics all in one place.",
-    reverse: false,
-  },
-  {
-    id: 2,
-    image:
-      "https://myaio.com/wp-content/uploads/2023/09/image_2023_09_11T16_41_22_845Z.png",
-    title: "Navigate your MY AIO Dashboard",
-    text: "All your marketing insights, brilliantly visualized in a single panorama.",
-    reverse: true,
-  },
-  {
-    id: 3,
-    image: "https://myaio.com/wp-content/uploads/2023/09/1-copy.png",
-    title: "Your MY AIO Dashboard",
-    text: "Intuitive design meets powerful insights—all at your fingertips.",
-    reverse: false,
-  },
-];
-
-function GettingToKnow() {
+const GettingToKnow = ({ steps }) => {
   return (
     <div className="relative container mx-auto p-6">
-      <h1 className="mb-8">Getting to Know</h1>
+      {/* Title */}
       <Title text="Getting To Know" size="large" />
-      {/* Divider Image - line image*/}
-      <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 flex justify-center">
+
+      {/* Divider Image */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 top-3 bottom-10 flex">
         <img
           src="https://myaio.com/wp-content/themes/dexai/assets/img/bg/line.svg"
           alt="Divider"
           className="h-full w-auto"
         />
       </div>
-      <div className="relative flex flex-col space-y-16 items-center">
-        {steps.map((step) => (
+
+      {/* Steps Section */}
+      <div className="relative mt-16 space-y-16">
+        {steps.map((step, index) => (
           <div
             key={step.id}
-            className={`relative flex items-center w-full ${
-              step.reverse ? "flex-row-reverse" : "flex-row"
-            }`}
+            className="grid grid-cols-1 md:grid-cols-2 items-center gap-8"
           >
-            {/* Image Section */}
-            <div className="w-1/3">
+            {/* Image Section - Alternates Left & Right */}
+            <div
+              className={`w-full flex justify-center ${
+                index % 2 === 0 ? "md:order-1" : "md:order-2"
+              }`}
+            >
               <img
                 src={step.image}
                 alt={`Step ${step.id}`}
-                className="w-full"
+                className="max-w-full h-auto"
               />
             </div>
 
-            {/* Text Section - Pushed Next to Divider */}
+            {/* Text Section - Small Size & Purple Color */}
             <div
-              className={`w-1/3 text-lg text-white ${
-                step.reverse ? "mr-12" : "ml-12"
+              className={`flex flex-col justify-center text-medium text-purple-300 ${
+                index % 2 === 0
+                  ? "md:order-2 text-left ml-20"
+                  : "md:order-1 text-right mr-10"
               }`}
             >
-              <strong className="block text-xl">{step.title}</strong>
-              {step.text}
+              <strong className="block text-[22px] text-white mb-2.5">
+                {step.title}
+              </strong>
+              <p className="mt-2">{step.text}</p>
             </div>
           </div>
         ))}
       </div>
     </div>
   );
-}
+};
 
 export default GettingToKnow;

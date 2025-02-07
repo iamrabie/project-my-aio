@@ -20,7 +20,6 @@ import HowItWorks from "./routes/HowItWorks/howItWorks";
 import Contact from "./routes/Contact/contact";
 import Layout from "./components/Layout/layout";
 import Button from "./components/Button/button";
-
 function App() {
   return (
     <div className="App">
