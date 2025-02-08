@@ -5,7 +5,6 @@ const GettingToKnow = ({ steps, withDivider = true }) => {
   return (
     <div className="relative">
       {/* Title */}
-      <Title text="Getting To Know MY AIO" size="large" highlightedText="MY AIO" />
 
       {/* Divider Image (Rendered only if withDivider is true) */}
       {withDivider && (
@@ -38,7 +37,7 @@ const GettingToKnow = ({ steps, withDivider = true }) => {
               />
             </div>
 
-            {/* Text Section - Small Size & Purple Color */}
+            {/* Text Section  */}
             <div
               className={`flex flex-col justify-center text-medium text-[#C8B8E8] ${
                 index % 2 === 0

@@ -78,14 +78,6 @@ function App() {
         />
       ))}
 
-      <Button variant="primary">Get Started</Button>
-      <Button variant="solidGradient">Connect y</Button>
-
-      <Button variant="gradient">Get Started</Button>
-      <Button variant="solidGradient">Connect Today</Button>
-      <Button variant="largePrimaryBtn">Join The Community</Button>
-      <Button variant="smallPrimaryBtn">Get Started</Button>
-
      
        <Footer />
    */}

@@ -58,7 +58,9 @@ const Navbar = () => {
 
         {/* Button */}
         <div className="flex-shrink-0">
-          <Button variant="primary">Get Started</Button>
+          <Button btnType="primaryBtn" padding="px-[26px] py-[12px]">
+            Get Started
+          </Button>
         </div>
       </div>
     </nav>
