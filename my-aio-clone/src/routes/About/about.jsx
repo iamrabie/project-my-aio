@@ -50,7 +50,6 @@ const About = () => {
 
         {/* Getting to Know */}
         <SectionCard display="flex flex-col" gapY="gap-y-10">
-          <Title text="Getting To Know" size="large" />
           <GettingToKnow steps={steps} withDivider={true} />
         </SectionCard>
 
