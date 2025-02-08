@@ -8,15 +8,12 @@ const steps = [
     title: "Data Analysis with Supervised Learning",
     text: (
       <>
-        MY AIO employs supervised learning, a machine <br /> learning category,
-        to analyze and interpret
-        <br /> customer data. This technique involves training <br />
-        algorithms on a labeled dataset, which allows the <br />
-        system to identify patterns and predict customer
-        <br /> behavior with accuracy. This form of predictive
-        <br /> modeling proves crucial for segmenting audiences
-        <br /> and customizing marketing strategies with <br />
-        data-driven insights.
+        MY AIO employs supervised learning, a machine learning category, to
+        analyze and interpret customer data. This technique involves training
+        algorithms on a labeled dataset, which allows the system to identify
+        patterns and predict customer behavior with accuracy. This form of
+        predictive modeling proves crucial for segmenting audiences and
+        customizing marketing strategies with data-driven insights.
       </>
     ),
     image: "https://myaio.com/wp-content/uploads/2024/02/Main_files-1-copy.png",
@@ -74,7 +71,7 @@ const steps = [
   },
   {
     id: 4,
-    image: "",
+    image: "https://myaio.com/wp-content/uploads/2024/02/Main_files-1-copy.png",
     title: (
       <>
         Scheduling with Predictive
@@ -154,36 +151,36 @@ const steps = [
 const HowItWorks = () => {
   return (
     <>
-      <SectionCard className="flex flex-col items-center mt-20 mb-12">
+      <SectionCard className="flex flex-col items-center ">
         <Title text="How My AIO Works" size="large" />
-        <p
-          className="flex flex-col text-driftingDream mt-9 text-[14px] font-semibold 
-    items-center max-w-2xl mx-auto leading-[1.75]"
-        >
+        <p className="text-[15px] text-driftingDream leading-7 font-semibold text-center mt-8">
           This section breaks down how our software simplifies your work. Easy
-          to understand and use, you’ll quickly see how MY AIO’s smart features
-          simplify your tasks and enhance your efficiency.
+          to understand and use,
+          <br /> you’ll quickly see how MY AIO’s smart features simplify your
+          tasks and enhance your efficiency.
         </p>
       </SectionCard>
+      <GettingToKnow steps={steps} withDivider={true} reverseOnEven={true} />
 
-      <GettingToKnow steps={steps} withDivider={false} />
-      <p className="flex text-driftingDream mt-9 text-[14px] font-semibold text-center max-w-2xl mx-auto leading-relaxed line-height:7 mb-2">
+      <p className="flex text-driftingDream [Outfit,sans-serif] mt-9 text-[14px] font-semibold text-center max-w-[600px] mx-auto leading-relaxed line-height:7 mb-2">
         MY AIO stands as a testament to the practical application of advanced AI
         techniques in marketing. It simplifies complex AI programs, making them
         accessible and beneficial for businesses eager to leverage AI for smart,
         effective marketing decisions.
       </p>
-      <div className="text-center mb-20">
-        <Button
-          withArrow={false}
-          btnType="smallPrimaryBtn"
-          padding="px-[24px] py-[10px]"
-          fontSize="text-sm"
-          fontWeight="font-[600]"
-        >
-          Get Started
-        </Button>
-      </div>
+      <SectionCard className="flex flex-col items-center ">
+        <div className="text-center mb-10">
+          <Button
+            withArrow={false}
+            btnType="smallPrimaryBtn"
+            padding="px-[24px] py-[10px]"
+            fontSize="text-sm"
+            fontWeight="font-[600]"
+          >
+            Get Started
+          </Button>
+        </div>
+      </SectionCard>
     </>
   );
 };
