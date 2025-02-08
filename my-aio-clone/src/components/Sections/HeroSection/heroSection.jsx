@@ -1,6 +1,7 @@
 import Title from "../../Title/title";
 import Banner from "../../Banner/banner";
 import { TypeAnimation } from "react-type-animation";
+import Button from "../../Button/button";
 
 const HeroSection = () => {
   return (
@@ -46,12 +47,16 @@ const HeroSection = () => {
         insights with AI precision.
       </p>
       <div className="flex mx-auto gap-x-6">
-        <button className="text-sm py-4 px-5 rounded-full bg-arcade text-sm text-white font-semibold">
-          JOIN THE COMMUNITY
-        </button>
-        <button className="text-sm py-4 px-5 rounded-full bg-arcade text-white font-semibold">
-          JOIN THE COMMUNITY
-        </button>
+        <Button
+          withArrow={true}
+          btnType="solidBtn"
+          padding="py-[13.5px] px-[32px] "
+        >
+          Connect Today
+        </Button>
+        <Button withArrow={false} btnType="invertedBtn">
+          Get Started
+        </Button>
       </div>
       <Banner />
     </>
