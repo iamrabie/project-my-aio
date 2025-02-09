@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "../../Title/title";
 
 const GettingToKnow = ({
   steps,
@@ -70,6 +71,8 @@ const GettingToKnow = ({
                 >
                   {step.title}
                 </strong>
+                {/* <p className='p-0 m-0 font-bold text-white text-xl'>{step.title}</p> */}
+                {/* <Title text={step?.title} size="small" /> */}
 
                 {/* Customizable Text */}
                 <p className={`mt-2 ${textSize} ${textWeight} leading-loose`}>

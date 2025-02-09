@@ -8,7 +8,7 @@ const HeroSection = () => {
     <>
       <div className="text-center flex flex-col gap-y-3">
         <Title size="large" text="Whatever You Need to Know - MY AIO" />
-        <p className="p-0 m-0 font-bold text-white text-6xl">
+        <p data-aos="zoom-in-up" data-aos-duration="1200" className="p-0 m-0 font-bold text-white text-6xl">
           <TypeAnimation
             sequence={[
               "Has the Data", // First word

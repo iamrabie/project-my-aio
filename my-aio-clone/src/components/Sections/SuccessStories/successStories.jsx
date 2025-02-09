@@ -27,7 +27,7 @@ const SuccessStories = () => {
                   </div>
                 </div>
                 <div className="w-[50%]">
-                  <video className="h-96 w-full rounded-xl border border-purple-800 shadow shadow-md" controls loop autoPlay playsInline muted="muted">
+                  <video className="h-96 w-full rounded-xl border border-[#FFFFFF14] shadow shadow-md" controls loop autoPlay playsInline muted="muted">
                    <source src={story.src} type="video/mp4" className="w-full"/>
                   </video>
                 </div>

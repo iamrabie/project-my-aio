@@ -20,7 +20,7 @@ const IrregularCard = ({ icon, title, description, size }) => {
   return (
     <>
       {/* icon container */}
-      <div className={`${iconStyles[size]} bg-fabricOfSpace`}>{icon}</div>
+      <div className={`${iconStyles[size]} bg-fabricOfSpace animate-hflip`}>{icon}</div>
       {/* irregualr shape container */}
       <div
         className={`${cardStyles[size]} bg-gradient-to-r from-purple-900/20 shadow shadow-sm to-blue-900/20 flex justify-center items-center border border-[#FFFFFF14]`}

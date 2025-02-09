@@ -20,7 +20,17 @@ import HowItWorks from "./routes/HowItWorks/howItWorks";
 import Contact from "./routes/Contact/contact";
 import Layout from "./components/Layout/layout";
 import Button from "./components/Button/button";
+import Aos from 'aos';
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 function App() {
+
+   useEffect(() => {
+    Aos.init();
+  }, []);
+
+
   return (
     <div className="App">
       <Layout>

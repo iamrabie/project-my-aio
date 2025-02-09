@@ -12,7 +12,7 @@ const EventsAndExpos = () => {
             <div className="w-[50%] grid grid-cols-2 gap-4">
                {eventsAndExposInfo.map(item => 
                  <div>
-                    <img src={item.src} className="rounded-xl h-60 w-[310px] object-cover" />
+                    <img src={item.src} className="rounded-xl h-60 w-[310px] object-cover" data-aos="zoom-in" data-aos-duration="800" />
                  </div>
                )}
             </div>

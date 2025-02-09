@@ -1,4 +1,10 @@
 const Title = ({ size, text, highlightedText , textAlign="text-center" }) => {
+
+  //animation on scroll
+  // useEffect(() => {
+  //   Aos.init();
+  // }, []);
+
   //title size
   const titleSize = {
     extraSmall: "text-[15px]",
@@ -12,7 +18,8 @@ const Title = ({ size, text, highlightedText , textAlign="text-center" }) => {
 
   return (
     <>
-      <p className={`p-0 m-0 font-bold text-white ${textAlign} ${titleSize[size]}`}>
+    {/* <div  data-aos="zoom-out-up" data-aos-duration="1000"> */}
+      <p data-aos={size == "large" || size == "medium" ? "zoom-in-up" : ''} data-aos-duration="1200" className={`p-0 m-0 font-bold text-white ${textAlign} ${titleSize[size]}`}>
         {parts.map((part, index) =>
           part.toLowerCase() === highlightedText?.toLowerCase() ? (
             <span key={index} className="text-[#0d6efd] font-light">
@@ -23,6 +30,7 @@ const Title = ({ size, text, highlightedText , textAlign="text-center" }) => {
           )
         )}
       </p>
+    {/* </div> */}
     </>
   );
 };
