@@ -216,6 +216,7 @@ export const steps = [
     ),
     reverse: true,
   },
+
   {
     id: 3,
     image: "https://myaio.com/wp-content/uploads/2023/09/1-copy.png",
@@ -225,12 +226,13 @@ export const steps = [
   },
 ];
 
+export const layout = ["text-right", "text-left", "text-right"];
 
 export let nav = [
-  { id:0, title:'Seamless Integration' , name:'integration'},
-  { id:1, title:'User-Centric' , name:'user-centric'},
-  { id:2, title:'Real-Time Data' , name:'real-time'},
-  { id:3, title:'Top-Notch Security' , name:'top-notch'}
+  { id: 0, title: "Seamless Integration", name: "integration" },
+  { id: 1, title: "User-Centric", name: "user-centric" },
+  { id: 2, title: "Real-Time Data", name: "real-time" },
+  { id: 3, title: "Top-Notch Security", name: "top-notch" },
 ];
 
 export let makingDataSmarterIcons = [
