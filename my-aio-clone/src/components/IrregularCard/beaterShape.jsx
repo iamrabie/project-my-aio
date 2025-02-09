@@ -1,50 +1,58 @@
 import React, { useState, useEffect } from "react";
+import "../../App.css";
 
 const BeaterShape = ({
   image,
   name,
   role,
   review,
-  rating = 5,
-  bgColor = "#4B0082",
-  width = "w-[560px]",
+  svgWidth = 582,
+  svgHeightBase = 285,
 }) => {
-  const baseHeight = 210;
   const reviewLineHeight = 24;
-  const maxCharsPerLine = 100;
+  const maxCharsPerLine = Math.floor(svgWidth / 6.5);
+  const paddingBelowReview = 10;
 
-  const [svgHeight, setSvgHeight] = useState(baseHeight);
-  const [namePosition, setNamePosition] = useState(180);
+  const [svgHeight, setSvgHeight] = useState(svgHeightBase);
 
   useEffect(() => {
     const reviewLines = Math.ceil(review.length / maxCharsPerLine);
     const extraHeight = reviewLines * reviewLineHeight;
-    setSvgHeight(baseHeight + extraHeight);
-    setNamePosition(140 + extraHeight); // Adjust position dynamically
-  }, [review]);
+    setSvgHeight(svgHeightBase + extraHeight);
+  }, [review, svgHeightBase, maxCharsPerLine]);
 
   return (
     <svg
-      viewBox={`0 0 600 ${svgHeight}`}
+      viewBox={`0 0 ${svgWidth} ${svgHeight}`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="none"
-      className={`${width} relative text-fabricOfSpace justify-center`}
+      className={`w-[${svgWidth}px] relative text-fabricOfSpace justify-center mt-6 ml-4 `}
     >
       {/* Background Shape */}
       <path
-        d={`M97.8407 0H531C547.569 0 561 13.4315 561 30V${svgHeight - 40}C561 ${
+        d={`M${svgWidth * 0.16} 0H${svgWidth * 0.9}C${
+          svgWidth * 0.93
+        } 0 ${svgWidth} 13.4315 ${svgWidth} 30V${svgHeight - 40}C${svgWidth} ${
           svgHeight - 20
-        } 547.569 ${svgHeight} 531 ${svgHeight}H127.841C111.272 ${svgHeight} 97.8407 ${
+        } ${svgWidth * 0.93} ${svgHeight} ${svgWidth * 0.9} ${svgHeight}H${
+          svgWidth * 0.2
+        }C${svgWidth * 0.17} ${svgHeight} ${svgWidth * 0.16} ${
           svgHeight - 20
-        } 97.8407 ${
-          svgHeight - 40
-        }V78.4298C97.8407 66.4626 90.7283 55.6401 79.7433 50.8921L6.37287 19.1792C-3.59343 14.8715 -0.516972 0 10.3404 0H97.8407Z`}
-        fill={bgColor}
+        } ${svgWidth * 0.16} ${svgHeight - 40}V${svgHeight * 0.27}C${
+          svgWidth * 0.16
+        } ${svgHeight * 0.23} ${svgWidth * 0.14} ${svgHeight * 0.19} ${
+          svgWidth * 0.13
+        } ${svgHeight * 0.18}L${svgWidth * 0.01} ${svgHeight * 0.07}C${
+          svgWidth * -0.006
+        } ${svgHeight * 0.05} ${svgWidth * 0.01} 0 ${svgWidth * 0.02} 0H${
+          svgWidth * 0.16
+        }Z`}
+        fill="currentColor"
       ></path>
 
       {/* Profile Image */}
-      <foreignObject x="8" y="57" width="66" height="70">
+      <foreignObject x="8" y="57" width={svgWidth * 0.11} height="70">
         <img
           src={image}
           alt={name}
@@ -52,10 +60,10 @@ const BeaterShape = ({
         />
       </foreignObject>
 
-      {/* Star Ratings (Dynamic) */}
-      <foreignObject x="100" y="35" width="200" height="30">
+      {/* Star Ratings */}
+      <foreignObject x="100" y="35" width={svgWidth * 0.34} height="30">
         <div className="flex gap-1.5 pl-12 mb-3">
-          {[...Array(rating)].map((_, i) => (
+          {[...Array(5)].map((_, i) => (
             <svg
               key={i}
               className="w-5 h-6 text-[#FFAA4A]"
@@ -75,19 +83,29 @@ const BeaterShape = ({
       </foreignObject>
 
       {/* Review Text */}
-      <foreignObject x="100" y="76" width="450" height={svgHeight - 150}>
-        <p className="text-base mt-1 leading-relaxed tracking-wide pl-12 pr-7 text-purple-400 font-outfit break-words">
+      <foreignObject
+        x="100"
+        y="75"
+        width={svgWidth * 0.76}
+        height={svgHeight - 140}
+      >
+        <p className="text-[18px] leading-relaxed tracking-wide pl-12 pr-7 text-driftingDream font-outfit break-words mb-0">
           {review}
         </p>
       </foreignObject>
 
-      {/* User Name & Role (Position Adjusted Dynamically) */}
-      <foreignObject x="100" y={namePosition} width="420" height="100">
+      {/* User Name & Role */}
+      <foreignObject
+        x="100"
+        y={svgHeight - paddingBelowReview - 100}
+        width={svgWidth * 0.71}
+        height="50"
+      >
         <div>
           <h5 className="text-lg font-semibold pl-12 text-white truncate">
             {name}
           </h5>
-          <span className="pl-12 mb-2 text-[16px] font-outfit text-purple-400">
+          <span className="text-driftingDream pl-12 text-[16px] font-outfit">
             {role}
           </span>
         </div>

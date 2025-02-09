@@ -74,24 +74,30 @@ const About = () => {
         {/* PROFESSIONALS & TEAMS CHOOSE UP */}
         <SectionCard display="flex flex-col" gapY="gap-y-10">
           <Title text="Professionals & Teams Choose Us" size="large" />
-          <div className="flex justify-center items-center min-h-screen">
+          <div className="flex justify-center items-center ">
             <BeaterShape
               image="https://myaio.com/wp-content/uploads/2024/09/Lex.png"
               name="LES ALEXANDER"
               role="R&D Expert"
               review="I never thought I'd have all my tools in one place, and the AI insights? Pure gold. Helped me make sense of where my campaigns were headed."
+              svgWidth={600}
+              svgHeightBase={280}
             />
             <BeaterShape
               image="https://myaio.com/wp-content/uploads/2024/09/Emily.png"
               name="Emily Johnson"
               role="Operational Manage"
               review="Honestly, I've used a bunch of these analytics tools before, but MY AIO's dashboard? Game changer. It's like they took all the techy stuff and made it super easy to get. I can see everything I need without getting a headache"
+              svgWidth={600}
+              svgHeightBase={290}
             />
             <BeaterShape
               image="https://myaio.com/wp-content/uploads/2024/09/Michael.png"
               name="Michael Davis"
               role="Business Owner"
               review="Knowing that MY AIO has my data locked down tight gives me peace of mind. And on the few occasions I've had questions, their support team was right there with answers. Top-notch experience all around."
+              svgWidth={600}
+              svgHeightBase={280}
             />
           </div>
         </SectionCard>
