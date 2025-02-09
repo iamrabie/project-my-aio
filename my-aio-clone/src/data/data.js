@@ -240,3 +240,8 @@ export let makingDataSmarterIcons = [
   { id:3, icon:<RiDeleteBin6Line />},
   { id:4, icon:<FaPlus />}
 ];
+
+export let successStoriesInfo = [
+  { id:0 , src:'https://myaio.com/wp-content/uploads/2024/10/Snapinsta.app_video_AQMN3DhyO-vw0tyH3J1_ICrGomhkE-p2cpWPFfXzVjpQXxQQIHk5xKYrvCLmNz5OdJ0rwNowRkopVsgTMdN6TXmF.mp4' , img:'https://myaio.com/wp-content/uploads/2024/10/logo-fast-glass.gif' , description:'Working with them has not only improved our efficiency but also significantly expanded our client base and market reach. Their AI-driven tools optimized every aspect of our operations, from project scheduling to precision measurements, enabling us to handle more projects seamlessly, which directly led to more leads, increased revenue, customer retention, and steady business growth.'},
+  { id:1 , src:'https://myaio.com/wp-content/uploads/2024/10/Snapinsta.app_video_734475FC69EAFBE4E245468109EB0ABE_video_dashinit.mp4' , img:'https://myaio.com/wp-content/uploads/2024/02/downloadedImage-1-e1706831368336.png' , description:'Initially struggling with customer retention and inefficient marketing, Speedy Garage Services turned to MY AIO. This change was transformative. Using MY AIO’s predictive analytics, we were able to foresee and meet specific needs in our commercial garage door installations. The utilization of MY AIO’s decision trees was crucial in swiftly determining the most suitable replacement and repair options for our commercial clients, thereby minimizing their operational downtime. '}
+];
