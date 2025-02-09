@@ -1,15 +1,23 @@
 import React from "react";
 
-const GettingToKnow = ({ steps, withDivider = true, reverseOnEven = true }) => {
+const GettingToKnow = ({
+  steps,
+  withDivider = true,
+  reverseOnEven = true,
+  titleSize = "text-[34px]",
+  titleWeight = "font-bold",
+  textSize = "text-[15px]",
+  textWeight = "font-semibold",
+}) => {
   return (
-    <div className="relative">
+    <div className="relative w-full">
       {/* Divider Image (Rendered only if withDivider is true) */}
       {withDivider && (
-        <div className="absolute left-1/2 transform -translate-x-1/2 top-5 bottom-10 flex">
+        <div className="absolute left-1/2 transform -translate-x-1/2 top-10 bottom-10 flex">
           <img
             src="https://myaio.com/wp-content/themes/dexai/assets/img/bg/line.svg"
             alt="Divider"
-            className="h-93 w-[140px]"
+            className="h-92"
           />
         </div>
       )}
@@ -17,34 +25,33 @@ const GettingToKnow = ({ steps, withDivider = true, reverseOnEven = true }) => {
       {/* Steps Section */}
       <div className="relative mt-16 space-y-16">
         {steps.map((step, index) => {
-          // Determine if the index is even
           const isEven = index % 2 === 0;
 
-          // Reverse order logic based on the reverseOnEven flag
+          // Order classes based on reverseOnEven flag
           const textOrder = reverseOnEven
             ? isEven
-              ? "md:order-2 text-start" // Normal Order
+              ? "md:order-2 text-start"
               : "md:order-1 text-start"
             : isEven
-            ? "md:order-1 text-start" // Reversed Order
+            ? "md:order-1 text-start"
             : "md:order-2 text-start";
 
           const imageOrder = reverseOnEven
             ? isEven
-              ? "md:order-1" // Normal Order
+              ? "md:order-1"
               : "md:order-2"
             : isEven
-            ? "md:order-2" // Reversed Order
+            ? "md:order-2"
             : "md:order-1";
 
           return (
             <div
               key={step.id}
-              className="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-8"
+              className="flex flex-col md:flex-row items-center justify-center gap-8"
             >
-              {/* Image Section */}
+              {/* Image Section (50% Width) */}
               <div
-                className={`w-full flex items-center relative ${imageOrder}`}
+                className={`relative flex justify-center items-center w-full md:w-1/2 ${imageOrder}`}
               >
                 <img
                   src={step.image}
@@ -53,14 +60,19 @@ const GettingToKnow = ({ steps, withDivider = true, reverseOnEven = true }) => {
                 />
               </div>
 
-              {/* Text Section */}
+              {/* Text Section (50% Width) */}
               <div
-                className={`flex flex-col items-center text-medium text-[#C8B8E8] ${textOrder}`}
+                className={`flex flex-col justify-center items-center text-medium text-[#C8B8E8] w-full md:w-1/2 ${textOrder}`}
               >
-                <strong className="block text-[24px] text-white mb-2.5 w-[70%] ">
+                {/* Customizable Title */}
+                <strong
+                  className={`block ${titleSize} ${titleWeight} text-white `}
+                >
                   {step.title}
                 </strong>
-                <p className="mt-2 text-[14px] font-semibold leading-6 w-[70%] ">
+
+                {/* Customizable Text */}
+                <p className={`mt-2 ${textSize} ${textWeight} leading-loose`}>
                   {step.text}
                 </p>
               </div>

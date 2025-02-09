@@ -63,6 +63,9 @@ const Features = () => {
           steps={steps}
           withDivider={false}
           reverseOnEven={false}
+          titleSize="text-[32px]"
+          textSize="text-[14px]"
+          textWeight="font-semibold"
         />
       </SectionCard>
     </>

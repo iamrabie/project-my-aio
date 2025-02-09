@@ -5,15 +5,20 @@ import Button from "../../components/Button/button";
 const steps = [
   {
     id: 1,
-    title: "Data Analysis with Supervised Learning",
+    title: (
+      <>
+        Data Analysis with Supervised
+        <br /> Learning
+      </>
+    ),
     text: (
       <>
-        MY AIO employs supervised learning, a machine learning category, to
-        analyze and interpret customer data. This technique involves training
-        algorithms on a labeled dataset, which allows the system to identify
-        patterns and predict customer behavior with accuracy. This form of
-        predictive modeling proves crucial for segmenting audiences and
-        customizing marketing strategies with data-driven insights.
+        MY AIO employs supervised learning, a machine <br />
+        learning category, to analyze and interpret <br />
+        customer data. This technique involves training <br />
+        algorithms on a labeled dataset, which allows the
+        <br />
+        system to identify patterns and predict customer
       </>
     ),
     image: "https://myaio.com/wp-content/uploads/2024/02/Main_files-1-copy.png",
@@ -160,16 +165,23 @@ const HowItWorks = () => {
           tasks and enhance your efficiency.
         </p>
       </SectionCard>
-      <GettingToKnow steps={steps} withDivider={true} reverseOnEven={true} />
+      <GettingToKnow
+        steps={steps}
+        withDivider={true}
+        reverseOnEven={true}
+        titleSize="text-[24px]"
+        textSize="text-[14px]"
+        textWeight="font-semibold"
+      />
 
-      <p className="flex text-driftingDream [Outfit,sans-serif] mt-9 text-[14px] font-semibold text-center max-w-[600px] mx-auto leading-relaxed line-height:7 mb-2">
+      <p className="flex text-driftingDream [Outfit,sans-serif] mt-9 text-[14px] font-semibold text-center max-w-[600px] mx-auto leading-relaxed line-height:7 ">
         MY AIO stands as a testament to the practical application of advanced AI
         techniques in marketing. It simplifies complex AI programs, making them
         accessible and beneficial for businesses eager to leverage AI for smart,
         effective marketing decisions.
       </p>
       <SectionCard className="flex flex-col items-center ">
-        <div className="text-center mb-10">
+        <div className="text-center mb-5">
           <Button
             withArrow={false}
             btnType="smallPrimaryBtn"
