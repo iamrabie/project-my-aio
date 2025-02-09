@@ -17,14 +17,11 @@ import Contact from "../../components/Contact/contact";
 import EventsAndExpos from "../../components/Sections/EventsAndExpos/events&expos";
 import Nav from "../../components/Sections/MakingDataSmarter/nav";
 import MakingDataSmarter from "../../components/Sections/MakingDataSmarter/makingDataSmarter";
+import SuccessStories from "../../components/Sections/SuccessStories/successStories";
 // import IrregularCard from "../../components/IrregularCard/irregularCard";
 import { useState } from "react";
 
 const About = () => {
-
-  const [index , setIndex] = useState(0);
-
-  const story = successStoriesInfo[index];
 
   return (
     <>
@@ -67,30 +64,7 @@ const About = () => {
 
         {/* SUCCESS STORIES SECTION */}
         <SectionCard display="flex flex-col" gapY="gap-y-20">
-          <Title
-            text="Our Success Stories"
-            size="large"
-            highlightedText="Success"
-          />
-          <div className="flex">
-                <div className="w-[50%] flex flex-col gap-y-7 my-auto">
-                  <div>
-                    <img src={story.img} width="170" className="object-cover"/>
-                  </div>
-                  <div>
-                    <p className="w-3/4 text-driftingDream text-[13px] italic leading-7 tracking-wide">{story.description}</p>
-                  </div>
-                </div>
-                <div className="w-[50%]">
-                  <video className="h-96 w-full rounded-xl border border-[#FFFFFF14] shadow shadow-md" controls loop autoPlay playsInline>
-                   <source src={story.src} type="video/mp4" className="w-full"/>
-                  </video>
-                </div>
-          </div>
-          <div className="mx-auto text-white flex gap-x-2">
-          <button onClick={ () => {setIndex(0); }} className="rounded-full border p-1 focus:bg-white"></button>
-          <button onClick={ () => {setIndex(prev => prev + 1); }} className="rounded-full border p-1 focus:bg-white"></button>
-          </div>
+          <SuccessStories />
         </SectionCard>
 
         {/* OVERALL RATING SECTION */}
