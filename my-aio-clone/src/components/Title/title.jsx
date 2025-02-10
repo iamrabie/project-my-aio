@@ -7,10 +7,10 @@ const Title = ({ size, text, highlightedText , textAlign="text-center" }) => {
 
   //title size
   const titleSize = {
-    extraSmall: "text-[15px]",
-    small: "text-xl",
-    medium:"text-5xl",
-    large: "text-6xl",
+    extraSmall: "md:text-sm lg:text-[15px]",
+    small: "md:text-lg lg:text-xl",
+    medium:"md:text-4xl lg:text-5xl",
+    large: "md:text-5xl lg:text-6xl",
   };
 
   //for highlighted Text

@@ -13,7 +13,7 @@ const CustomerTrust = () => {
             <marquee direction="right" scrolldelay="150">
                 <div className="flex gap-x-16">
                 {customerTrustInfo.map(item => 
-                    <div className="border border-white py-2 px-7 rounded-full w-[fit-content]" key={item.id}>
+                    <div className="border border-white sm:p-0 lg:py-2 lg:px-7 rounded-full w-[fit-content]" key={item.id}>
                       <img src={item.src} alt="" />
                     </div>
                 )}

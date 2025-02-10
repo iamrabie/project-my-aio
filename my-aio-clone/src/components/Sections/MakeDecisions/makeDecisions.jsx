@@ -11,7 +11,7 @@ const MakeDecisions = () => {
         highlightedText="10x Effective"
         size="large"
       />
-      <div className="grid grid-cols-3 gap-x-8">
+      <div className="sm:grid sm:grid-cols-1 sm:gap-x-0 sm:mx-auto lg:grid lg:grid-cols-2 xl:grid xl:grid-cols-3 2xl:grid 2xl:grid-cols-3 lg:gap-x-8">
         {makeDecisionsInfo.map((item) => (
           <div key={item.id}>
             <IrregularCard

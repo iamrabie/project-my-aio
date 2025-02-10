@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}", // Ensure all JSX files are included
+    "./src/**/*.{js,jsx,ts,tsx,html}", // Ensure all JSX files are included
+    
   ],
   theme: {
     extend: {
@@ -17,8 +18,10 @@ module.exports = {
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
       },
+      
+      
     },
   },
-  plugins: [require("tailwindcss-animate")], // Add this line
+  plugins: [], // Add this line
 
 };

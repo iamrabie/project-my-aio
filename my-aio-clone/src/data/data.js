@@ -102,22 +102,22 @@ export let bannerInfo = [
   {
     id: 5,
     src: "https://www.brandpush.co/cdn-cgi/imagedelivery/gKm6BYVdHCj_SVQET_Msrw/d1d24201-6f48-4c9b-6ed2-46464eac1900/public",
-    height: "h-5",
+    height: "md:h-5",
   },
   {
     id: 6,
     src: "https://www.brandpush.co/cdn-cgi/imagedelivery/gKm6BYVdHCj_SVQET_Msrw/7acfc7a6-2b16-4ba6-01d5-96b99d462f00/public",
-    height: "h-14",
+    height: "md:h-14",
   },
   {
     id: 7,
     src: "https://www.brandpush.co/cdn-cgi/imagedelivery/gKm6BYVdHCj_SVQET_Msrw/064e355d-7093-4b83-a573-d01a19b47500/public",
-    height: "h-10",
+    height: "md:h-10",
   },
   {
     id: 8,
     src: "https://www.brandpush.co/cdn-cgi/imagedelivery/gKm6BYVdHCj_SVQET_Msrw/31f90197-ad2e-4772-b420-56e60b9b4a00/public",
-    height: "h-8",
+    height: "md:h-8",
   },
   {
     id: 9,

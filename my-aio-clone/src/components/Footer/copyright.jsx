@@ -3,7 +3,7 @@ import { copyrightsInfo } from "../../data/data";
 const Copyright = () => {
   return (
     <>
-      <div className="flex justify-between text-driftingDream font-semibold text-[15px] pt-12 pb-[56px]">
+      <div className="flex justify-between text-driftingDream font-semibold sm:text-[13px] lg:text-[15px] pt-12 pb-[56px]">
         <div>
           <p>Copyright © 2025 MY AIO All rights reserved.</p>
         </div>

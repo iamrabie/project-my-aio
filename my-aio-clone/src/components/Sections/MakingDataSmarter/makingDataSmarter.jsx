@@ -5,7 +5,7 @@ const MakingDataSmarter = () => {
   return (
     <>
       {/* container 1 */}
-      <div className="w-2/5 flex flex-col gap-y-7 my-2">
+      <div className="sm:w-full xl:w-2/5 flex flex-col gap-y-7 my-2">
         <Title
           text="Making Data Smarter & Simpler"
           size="large"
@@ -19,7 +19,7 @@ const MakingDataSmarter = () => {
       </div>
 
       {/* container 2 */}
-      <div className="w-3/5">
+      <div className="sm:w-full xl:w-3/5">
         <Nav />
       </div>
     </>

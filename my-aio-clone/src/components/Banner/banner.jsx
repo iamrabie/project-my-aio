@@ -4,40 +4,40 @@ import { bannerInfo } from "../../data/data";
 const Banner = () => {
   return (
     <>
-      <div className="w-[95%] mx-auto bg-white rounded-lg py-[23px] px-[34px] flex flex-col gap-y-7">
+      <div className="w-[95%] mx-auto bg-white rounded-lg sm:py-[34px] sm:px-[38px] lg:py-[23px] lg:px-[34px] flex flex-col sm:gap-y-14 lg:gap-y-7">
         {/* container 1 */}
-        <div className="flex items-center justify-between">
-          <hr className="border border-gray-200 w-96" />
-          <p className="tracking-[10px] font-bold text-lg">AS SEEN ON</p>
-          <hr className="border border-gray-200 w-96" />
+        <div className="sm:flex sm:flex-col md:flex md:flex-row items-center md:justify-center xl:justify-between">
+          <hr className="border border-gray-200 sm:w-full md:hidden xl:block lg:w-96" />
+          <p className="tracking-[10px] font-bold sm:text-xl lg:text-lg">AS SEEN ON</p>
+          <hr className="border border-gray-200 sm:w-full md:hidden xl:block lg:w-96" />
         </div>
         {/* container 2 */}
         <div>
-          <div className="flex items-center justify-between">
+          <div className="flex items-center sm:justify-center xl:justify-between">
             <img
-              className="text-gray-300 h-[110px]"
+              className="text-gray-300 h-[110px] sm:hidden xl:block"
               src="https://www.brandpush.co/cdn-cgi/imagedelivery/gKm6BYVdHCj_SVQET_Msrw/3fb10293-8878-4ce5-5496-cef376fe9300/public"
               alt="Trust Leaf"
             />
-            <div className="flex items-center gap-x-4 justify-around">
+            <div className="sm:flex sm:flex-col xl:flex xl:flex-row items-center sm:gap-y-7 xl:gap-y-0 xl:gap-x-4 justify-around">
               {bannerInfo.map((info) => (
-                <img key={info.id} className={info.height} src={info.src} />
+                <img key={info.id} className={`${info.height}`} src={info.src} />
               ))}
             </div>
             <img
-              className="text-gray-300 h-[110px] transform scale-x-[-1]"
+              className="text-gray-300 h-[110px] sm:hidden xl:block transform scale-x-[-1]"
               src="https://www.brandpush.co/cdn-cgi/imagedelivery/gKm6BYVdHCj_SVQET_Msrw/3fb10293-8878-4ce5-5496-cef376fe9300/public?filters=grayscale"
               alt="Trust Leaf"
             />
           </div>
 
-          <div className="flex items-center gap-x-3 justify-around w-[fit-content] mx-auto mt-[-14px]">
+          <div className="sm:flex sm:flex-col sm:gap-y-6  lg:gap-y-6 xl:gap-y-0 xl:flex xl:flex-row items-center gap-x-3 justify-around w-[fit-content] mx-auto sm:mt-[30px] lg:mt-[50px] xl:mt-[-14px]">
             <img
-              className="h-2"
+              className="sm:h-5 lg:h-5 xl:h-2"
               src="https://www.brandpush.co/cdn-cgi/imagedelivery/gKm6BYVdHCj_SVQET_Msrw/b79268ce-3bb2-42ee-7919-7c650b840700/public"
             />
             <img
-              className="h-4"
+              className="sm:h-8 lg:h-5 xl:h-4"
               src="https://www.brandpush.co/cdn-cgi/imagedelivery/gKm6BYVdHCj_SVQET_Msrw/d3e046d7-03ea-40d6-f101-13d5098e6700/public"
             />
           </div>

@@ -33,7 +33,7 @@ const About = () => {
         </SectionCard>
 
         {/* STATS CONTAINER */}
-        <SectionCard display="flex" gapX="gap-x-6">
+        <SectionCard display="sm:flex sm:flex-col lg:flex lg:flex-row" width="w-[90%]" gapX="sm:gap-x-0 md:gap-x-6" gapY="sm:gap-y-6 lg:gap-y-0">
           <Statistics />
         </SectionCard>
 
@@ -48,7 +48,7 @@ const About = () => {
         </SectionCard>
 
         {/* MAKE DATA SMARTER SECTION */}
-        <SectionCard display="flex" gapX="gap-x-10">
+        <SectionCard display="sm:flex sm:flex-col md:flex md:flex-col xl:flex xl:flex-row" gapX="gap-x-10" gapY="sm:gap-y-8 lg:gap-y-0">
           <MakingDataSmarter />
         </SectionCard>
 
@@ -72,7 +72,7 @@ const About = () => {
           <OverallRating />
         </SectionCard>
         {/* PROFESSIONALS & TEAMS CHOOSE UP */}
-        <SectionCard display="flex flex-col" gapY="gap-y-10">
+        {/* <SectionCard display="flex flex-col" gapY="gap-y-10">
           <Title text="Professionals & Teams Choose Us" size="large" />
           <div className="flex justify-center items-center ">
             <BeaterShape
@@ -100,7 +100,7 @@ const About = () => {
               svgHeightBase={280}
             />
           </div>
-        </SectionCard>
+        </SectionCard> */}
 
         {/* CONTACT US SECTION */}
         <SectionCard display="flex flex-col" gapY="gap-y-20" width="w-[80%]">

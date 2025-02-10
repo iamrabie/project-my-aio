@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Button from "../Button/button";
 import { menuLinks } from "../../data/data";
 import { Link } from "react-router-dom";
+import Logo from "../../assets/logo.png";
 import "../../App.css";
 
 const Navbar = () => {
@@ -26,24 +27,24 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`transition-all duration-500 ${
+      className={`transition-all duration-500 2xl:w-full ${
         isSticky
           ? "fixed top-0 left-0 w-full bg-[#200f42] z-50 shadow-md"
           : "relative bg-transparent"
       }`}
     >
-      <div className="container flex justify-between items-center h-[101px] px-3.5">
+      <div className="container flex justify-between items-center h-[101px] 2xl:mx-auto px-3.5">
         {/* Logo */}
         {/* <a href="/" className="flex-shrink-0"> */}
         <img
-          src="https://myaio.com/wp-content/uploads/2024/02/AIO-.png"
+          src={Logo}
           alt="Logo"
-          className="max-h-[39px]"
+          className="h-20"
         />
         {/* </a> */}
 
         {/* Menu */}
-        <ul className="flex gap-x-[60px]">
+        <ul className="lg:flex gap-x-[60px] sm:hidden md:hidden lg:block">
           {menuLinks.map((item) => (
             <Link to={item.link} key={item.id}>
               <li

@@ -6,6 +6,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import Copyright from "./copyright";
 import CustomerTrust from "./customerTrust";
+import Logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -24,15 +25,15 @@ const Footer = () => {
           {/* ----------------------- FOOTER --------------------------- */}
 
           {/* actual footer */}
-          <div className="flex justify-between border-y border-[#FFFFFF14] pt-12 pb-[124px]">
+          <div className="sm:flex sm:flex-col xl:flex xl:flex-row xl:justify-between border-y border-[#FFFFFF14] pt-12 pb-[124px]">
             {/* container 1 */}
-            <div className="flex justify-between w-[63%] text-sm">
+            <div className="sm:flex sm:flex-col sm:gap-y-9 xl:flex xl:flex-row xl:justify-between sm:w-full lg:w-[63%] lg:text-sm">
               {/* sub container 1     */}
-              <div className="flex flex-col gap-y-4 w-4/12">
+              <div className="flex flex-col gap-y-4 sm:w-full xl:w-4/12">
                 <div>
                   <img
-                    src="https://myaio.com/wp-content/uploads/2023/07/AIO-1-1-768x460.png"
-                    className="h-16"
+                    src={Logo}
+                    className="h-24"
                   />
                 </div>
                 <p className="text-driftingDream leading-6 font-semibold">
@@ -51,7 +52,7 @@ const Footer = () => {
                 {/* <Button variant="solidGradient">Connect Today</Button> */}
               </div>
               {/* sub container 2 */}
-              <div className="w-[4fit-content] flex flex-col gap-y-8">
+              <div className="w-[fit-content] flex flex-col gap-y-8">
                 <p className="text-white font-bold text-lg">Product</p>
                 <div className="flex flex-col gap-y-5">
                   {footerProducts.map((item) => (

@@ -3,9 +3,9 @@ import Input from "../Input/input";
 const ContactForm = () => {
   return (
     <>
-      <div className="w-[50%]">
-        <div className="w-[82%] me-auto">
-          <form className="p-14 text-[15px] bg-gradient-to-r from-purple-900/75 to-blue-900/75 rounded-[30px] flex flex-col gap-y-7">
+      <div className="sm:w-full lg:w-[50%]">
+        <div className="sm:w-full md:w-3/4 md:mx-auto lg:mx-0 lg:w-[82%] lg:me-auto">
+          <form className="sm:px-8 sm:py-12 lg:p-14 text-[15px] bg-gradient-to-r from-purple-900/75 to-blue-900/75 sm:rounded-3xl lg:rounded-[30px] flex flex-col sm:gap-y-4 lg:gap-y-7">
             <Input />
             <Input />
             <Input />

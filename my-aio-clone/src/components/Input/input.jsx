@@ -4,7 +4,7 @@ const Input = () => {
       <input
         type="text"
         placeholder="Your Name"
-        className="w-full rounded-md outline-none text-driftingDream border border-[#FFFFFF14] shadow shadow-sm py-3.5 px-5 bg-transparent/5 placeholder:text-driftingDream placeholder:text-semibold"
+        className="w-full rounded-md outline-none text-driftingDream border border-[#FFFFFF14] bg-transparent/5 shadow shadow-sm sm:py-5 sm:px-5 lg:py-3.5 lg:px-5 placeholder:text-driftingDream placeholder:text-semibold"
       />
     </>
   );

@@ -26,7 +26,7 @@ const IrregularCard = ({ icon, title, description, size }) => {
         className={`${cardStyles[size]} bg-gradient-to-r from-purple-900/20 shadow shadow-sm to-blue-900/20 flex justify-center items-center border border-[#FFFFFF14] hover:-translate-y-2 transition duration-300 ease-in-out`}
       >
         <div className={`${innerCardStyles[size]} text-driftingDream`}>
-          <Title text={title} size="small" />
+          <Title text={title} size="small" textAlign="text-left" />
           <p className="leading-6">{description}</p>
         </div>
       </div>

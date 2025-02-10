@@ -7,8 +7,8 @@ const HeroSection = () => {
   return (
     <>
       <div className="text-center flex flex-col gap-y-3">
-        <Title size="large" text="Whatever You Need to Know - MY AIO" />
-        <p data-aos="zoom-in-up" data-aos-duration="1200" className="p-0 m-0 font-bold text-white text-6xl">
+        <Title size="large" text="Whatever You Need to Know - MY AIO" highlightedText="MY AIO" />
+        <p data-aos="zoom-in-up" data-aos-duration="1200" className="p-0 m-0 font-bold text-white sm:text-5xl lg:text-6xl">
           <TypeAnimation
             sequence={[
               "Has the Data", // First word
@@ -42,11 +42,11 @@ const HeroSection = () => {
           />
         </p>
       </div>
-      <p className="text-driftingDream text-[15px] text-center">
+      <p className="text-driftingDream sm:text-[12px] md:text-[15px] text-center">
         Your all-in-one, top-rated marketing solution, delivering data-driven
         insights with AI precision.
       </p>
-      <div className="flex mx-auto gap-x-6">
+      <div className="sm:flex sm:flex-col md:flex md:flex-row mx-auto gap-x-6">
         <Button
           withArrow={true}
           btnType="solidBtn"
