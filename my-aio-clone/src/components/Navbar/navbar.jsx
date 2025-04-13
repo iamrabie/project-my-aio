@@ -36,42 +36,35 @@ const Navbar = () => {
       <div className="container flex justify-between items-center h-[101px] 2xl:mx-auto px-3.5">
         {/* Logo */}
         {/* <a href="/" className="flex-shrink-0"> */}
-        <img
-          src={Logo}
-          alt="Logo"
-          className="h-20"
-        />
+        {/* <img src={Logo} alt="Logo" className="h-20" /> */}
+        <img src="https://myaio.com/wp-content/uploads/2024/02/AIO-.png" alt="Logo" className="h-10" />
         {/* </a> */}
 
         {/* Menu */}
         <ul className="lg:flex gap-x-[60px] sm:hidden md:hidden lg:block">
           {menuLinks.map((item) => {
-            return(
+            return (
               <>
-              {item === 'About' || item == 'Features' ? 
-              (
-                <Link to={item.link} key={item.id}>
-                <li
-                  key={item.id}
-                  className="text-white text-[14.5px] font-bold py-[40px] leading-[1] relative z-10 tracking-[0.005em] hover:text-[#6721ff] transition-colors duration-300"
-                >
-                  {item.label}
-                </li>
-              </Link>
-              ) :
-              (
-                <li
-                  key={item.id}
-                  className="text-white text-[14.5px] font-bold py-[40px] leading-[1] relative z-10 tracking-[0.005em] hover:text-[#6721ff] transition-colors duration-300"
-                >
-                  {item.label}
-                </li>
-              )
-              }
+                {item == "About" ? (
+                  <Link to={item.link} key={item.id}>
+                    <li
+                      key={item.id}
+                      className="text-white text-[14.5px] font-bold py-[40px] leading-[1] relative z-10 tracking-[0.005em] hover:text-[#6721ff] transition-colors duration-300"
+                    >
+                      {item.label}
+                    </li>
+                  </Link>
+                ) : (
+                  <li
+                    key={item.id}
+                    className="text-white text-[14.5px] font-bold py-[40px] leading-[1] relative z-10 tracking-[0.005em] hover:text-[#6721ff] transition-colors duration-300"
+                  >
+                    {item.label}
+                  </li>
+                )}
               </>
             );
-
-})}
+          })}
         </ul>
 
         {/* Button */}
